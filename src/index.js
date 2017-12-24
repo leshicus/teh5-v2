@@ -12,10 +12,12 @@ import { Provider } from "react-redux";
 import configStore from "./util/configStore";
 
 // View
-import MetroContainer from "./pages/Metro/MetroContainer";
 import Layout from "./components/Layout/Layout";
+import MetroContainer from "./pages/Metro/MetroContainer";
+import ScrollContainer from "./pages/JavaScript/Scroll/ScrollContainer";
 
 import { initializeIcons } from "@uifabric/icons";
+import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 
 import registerServiceWorker from "./registerServiceWorker";
 
@@ -35,10 +37,13 @@ const store = configStore(history);
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <Layout>
-                <Redirect from="/" to="/metro" />
-                <Route exact path="/metro" component={MetroContainer} />
-            </Layout>
+            <Fabric className="ms-font-m" style={{ height: "100%" }}>
+                <Layout>
+                    <Redirect from="/" to="/scroll" />
+                    <Route exact path="/metro" component={MetroContainer} />
+                    <Route exact path="/scroll" component={ScrollContainer} />
+                </Layout>
+            </Fabric>
         </ConnectedRouter>
     </Provider>,
     document.getElementById("root")

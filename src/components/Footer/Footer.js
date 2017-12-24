@@ -2,10 +2,9 @@ import React from "react";
 import { Label } from "office-ui-fabric-react/lib/Label";
 import { Link } from "office-ui-fabric-react/lib/Link";
 import Devider from "./../Devider";
-import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 
 const Footer = props => (
-    <Fabric
+    <div
         style={{
             display: "flex",
             height: "40px",
@@ -19,7 +18,7 @@ const Footer = props => (
         <Link href="https://github.com/leshicus/">GitHub</Link>
         <Devider />
         <Label className="ms-font-mi">teh5.ru</Label>
-    </Fabric>
+    </div>
 );
 
 export default Footer;
