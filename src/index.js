@@ -14,22 +14,17 @@ import configStore from "./util/configStore";
 // View
 import Layout from "./components/Layout/Layout";
 import MetroContainer from "./pages/Metro/MetroContainer";
-import ScrollContainer from "./pages/JavaScript/Scroll/ScrollContainer";
 
-import { initializeIcons } from "@uifabric/icons";
+import DocumentContainer from "./pages/JavaScript/Document/DocumentContainer";
+
+import { initializeIcons } from "@uifabric/icons/lib";
 import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 
 import registerServiceWorker from "./registerServiceWorker";
 
 registerServiceWorker();
-initializeIcons(/* optional base url */);
 
-// Style
-const styles = {
-    router: {
-        height: "100%"
-    }
-};
+initializeIcons(/* optional base url */);
 
 const history = createHashHistory();
 const store = configStore(history);
@@ -37,11 +32,15 @@ const store = configStore(history);
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            <Fabric className="ms-font-m" style={{ height: "100%" }}>
+            <Fabric /* className="ms-font-m" */ style={{ height: "100%" }}>
                 <Layout>
-                    <Redirect from="/" to="/scroll" />
+                    {/* <Redirect from="/" to="/document" /> */}
                     <Route exact path="/metro" component={MetroContainer} />
-                    <Route exact path="/scroll" component={ScrollContainer} />
+                    <Route
+                        exact
+                        path="/document"
+                        component={DocumentContainer}
+                    />
                 </Layout>
             </Fabric>
         </ConnectedRouter>

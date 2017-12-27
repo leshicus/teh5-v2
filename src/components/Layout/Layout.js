@@ -13,7 +13,9 @@ const Layout = props => (
         }}
     >
         <Header />
-        <div style={{ padding: "5px", height: "100%" }}>{props.children}</div>
+        <div style={{ padding: "5px", height: "100%", overflow: "auto" }}>
+            {props.children}
+        </div>
         <Footer />
     </div>
 );

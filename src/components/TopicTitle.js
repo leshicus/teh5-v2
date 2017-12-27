@@ -4,6 +4,17 @@ import { DefaultButton, IButtonProps } from "office-ui-fabric-react/lib/Button";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";
 import okaidia from "react-syntax-highlighter/styles/prism/okaidia";
 
+import { mergeDeep } from "./../actions/mergeDeep";
+
+const style = {
+    'pre[class*="language-"]': {
+        marginTop: "-16.38px",
+        borderTopLeftRadius: 0,
+        borderTopRightRadius: 0
+    }
+};
+const highlightStyle = mergeDeep(okaidia, style);
+
 class TopicTitle extends React.Component {
     constructor(props) {
         super(props);
@@ -47,7 +58,7 @@ class TopicTitle extends React.Component {
                     />
                 </h3>
                 {this.state.showCode && (
-                    <SyntaxHighlighter language="jsx" style={okaidia}>
+                    <SyntaxHighlighter language="jsx" style={highlightStyle}>
                         {this.props.code}
                     </SyntaxHighlighter>
                 )}

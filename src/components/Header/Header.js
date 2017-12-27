@@ -1,4 +1,5 @@
 import React from "react";
+
 import { CommandBarButton } from "office-ui-fabric-react/lib/Button";
 import { CommandBar } from "office-ui-fabric-react/lib/CommandBar";
 import { ContextualMenuItemType } from "office-ui-fabric-react/lib/ContextualMenu";
@@ -42,8 +43,14 @@ const commandBarItems = {
                         title: "JavaScript",
                         items: [
                             {
-                                key: "scroll",
-                                name: "scroll"
+                                key: "document",
+                                name: "document",
+                                href: "document"
+                            },
+                            {
+                                key: "events",
+                                name: "events",
+                                disabled: true
                             }
                         ]
                     }

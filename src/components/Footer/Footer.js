@@ -13,11 +13,11 @@ const Footer = props => (
             flexDirection: "row",
             alignItems: "center"
         }}
-        className="ms-font-m"
+        /* className="ms-font-m" */
     >
         <Link href="https://github.com/leshicus/">GitHub</Link>
         <Devider />
-        <Label className="ms-font-mi">teh5.ru</Label>
+        <Label>teh5.ru</Label>
     </div>
 );
 
