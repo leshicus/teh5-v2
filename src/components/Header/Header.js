@@ -45,7 +45,7 @@ const commandBarItems = {
                             {
                                 key: "document",
                                 name: "document",
-                                href: "document"
+                                href: "#/document"
                             },
                             {
                                 key: "events",

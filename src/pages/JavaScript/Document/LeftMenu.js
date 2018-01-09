@@ -18,11 +18,8 @@ const LeftMenu = () => {
                                         key: "key1"
                                     },
                                     {
-                                        name: (
-                                            <Link to="/document/events">
-                                                Events
-                                            </Link>
-                                        ),
+                                        name: "Events",
+                                        url: "#/document/events",
                                         key: "key2"
                                     }
                                 ],
@@ -33,7 +30,7 @@ const LeftMenu = () => {
                 ]}
                 expandedStateText={"expanded"}
                 collapsedStateText={"collapsed"}
-                // selectedKey={"key3"}
+            // selectedKey={"key3"}
             />
         </div>
     );
