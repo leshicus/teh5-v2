@@ -1,23 +1,25 @@
-import React from "react";
-import Header from "./../Header/Header";
-import Footer from "./../Footer/Footer";
+import React from "react"
+import Header from "./../Header/Header"
+import Footer from "./../Footer/Footer"
 
 const Layout = props => (
+  <div
+    style={{
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      alignItems: "stretch"
+    }}
+  >
+    <Header />
     <div
-        style={{
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "stretch"
-        }}
+      style={{ /* marginRight: "25px", */ height: "100%", overflow: "auto" }}
     >
-        <Header />
-        <div style={{ padding: "5px", height: "100%", overflow: "auto" }}>
-            {props.children}
-        </div>
-        <Footer />
+      {props.children}
     </div>
-);
+    <Footer />
+  </div>
+)
 
-export default Layout;
+export default Layout
