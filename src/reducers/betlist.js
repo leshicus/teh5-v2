@@ -7,15 +7,7 @@ export default (state = {
                 ...state,
                 betlist: action.betlist
             }
-        case 'FILTER_MADE_DATETIME':
-            return {
-                ...state,
-                betlist: {
-                    filter:{
-                        madeDatetime: action.madeDatetime
-                    }
-                }
-            }
+
         default:
             return state
     }
