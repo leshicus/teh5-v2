@@ -1,11 +1,11 @@
 import React from "react"
 import { Route } from "react-router-dom"
 
-import JavaScriptLeftMenu from "./JavaScriptLeftMenu"
-import ScrollContainer from "./Scroll/ScrollContainer"
-import EventsContainer from "./EventsContainer"
-import DomContainer from "./DomContainer"
-import WindowContainer from "./WindowContainer"
+import MainLeftMenu from "./MainLeftMenu"
+import ScrollContainer from "./JavaScript/Document/Scroll/ScrollContainer"
+import EventsContainer from "./JavaScript/Document/EventsContainer"
+import DomContainer from "./JavaScript/Document/DomContainer"
+import WindowContainer from "./JavaScript/Document/WindowContainer"
 
 class DocumentContainer extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class DocumentContainer extends React.Component {
             }} /* className="ms-Grid-col ms-sm6 ms-md4 ms-lg2" */
             className="ms-Grid-col"
           >
-            <JavaScriptLeftMenu />
+            <MainLeftMenu />
           </div>
           <div
             className="ms-Grid-col ms-sm12 ms-md9"

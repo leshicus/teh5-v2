@@ -13,8 +13,8 @@ import configStore from "./util/configStore"
 
 // View
 import Layout from "./components/Layout/Layout"
+import Main from "./pages/Main"
 import MetroContainer from "./pages/Metro/MetroContainer"
-
 import DocumentContainer from "./pages/JavaScript/Document/DocumentContainer"
 
 import { initializeIcons } from "@uifabric/icons/lib"
@@ -34,7 +34,8 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <Fabric /* className="ms-font-m" */ style={{ height: "100%" }}>
         <Layout>
-          {/* <Redirect from="/" to="/document" /> */}
+          {/* <Redirect exact from="/" to="/document/window" /> */}
+          <Route exact path="/" component={Main} />
           <Route path="/metro" component={MetroContainer} />
           <Route path="/document" component={DocumentContainer} />
         </Layout>

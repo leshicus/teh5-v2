@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router } from "react-router-dom"
 import { Nav } from "office-ui-fabric-react/lib/Nav"
 
 const LeftMenu = () => {
+  const _onBreadcrumbItemClicked = () => {}
   return (
     <div className="ms-NavExample-LeftPane">
       <Nav
@@ -11,17 +12,27 @@ const LeftMenu = () => {
           {
             links: [
               {
-                name: "Document",
+                name: "document",
                 links: [
+                  {
+                    name: "window",
+                    url: "#/document/window",
+                    key: "window"
+                  },
+                  {
+                    name: "DOM",
+                    url: "#/document/dom",
+                    key: "dom"
+                  },
                   {
                     name: "Scroll",
                     url: "#/document/scroll",
-                    key: "key1"
+                    key: "scroll"
                   },
                   {
                     name: "Events",
                     url: "#/document/events",
-                    key: "key2"
+                    key: "events"
                   }
                 ],
                 isExpanded: true

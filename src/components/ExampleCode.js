@@ -8,19 +8,19 @@ import { mergeDeep } from "./../actions/mergeDeep"
 
 const style = {
   'pre[class*="language-"]': {
-    marginTop: "-16.38px",
+    marginTop: "0px",
     borderTopLeftRadius: 0,
     borderTopRightRadius: 0
   }
 }
 const highlightStyle = mergeDeep(okaidia, style)
 
-class TopicTitle extends React.Component {
+class ExampleCode extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      showCode: false
+      showCode: props.open
     }
   }
 
@@ -41,16 +41,26 @@ class TopicTitle extends React.Component {
   }
 
   render() {
+    const lang = "jsx" || this.props.language
+
     return (
       <div>
-        <h3
+        <div
           style={{
             borderBottom: "1px solid #a6a6a6",
             display: "flex",
             justifyContent: "space-between"
           }}
         >
-          <div id={this.props.itemId}>{this.props.title}</div>
+          <div
+            style={{
+              paddingTop: "10px",
+              fontWeight: "600",
+              color: "rgb(255, 0, 246)"
+            }}
+          >
+            {this.props.title}
+          </div>
           {this.props.code && (
             <DefaultButton
               iconProps={this.getIcon()}
@@ -58,9 +68,9 @@ class TopicTitle extends React.Component {
               onClick={() => this.changeShowCodeStatus()}
             />
           )}
-        </h3>
+        </div>
         {this.state.showCode && (
-          <SyntaxHighlighter language="jsx" style={highlightStyle}>
+          <SyntaxHighlighter language={lang} style={highlightStyle}>
             {this.props.code}
           </SyntaxHighlighter>
         )}
@@ -69,4 +79,4 @@ class TopicTitle extends React.Component {
   }
 }
 
-export default TopicTitle
+export default ExampleCode
