@@ -19,12 +19,7 @@ export default () => {
           window has properties and methods to work with browser window, to open
           new, close etc.
         </li>
-        <ExampleCode
-          title="window.open"
-          code={code_1}
-          language="javascript"
-          open
-        />
+        <ExampleCode title="window.open" code={code_1} language="javascript" />
 
         <li>
           window - DOM, BOM (browser object model), JavaScript
@@ -38,7 +33,6 @@ export default () => {
                 title="location.href"
                 code={code_2}
                 language="javascript"
-                open
               />
             </li>
             <li>JavaScript: Object, Array, Date, Number, Function</li>

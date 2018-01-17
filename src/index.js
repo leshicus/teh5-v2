@@ -16,6 +16,7 @@ import Layout from "./components/Layout/Layout"
 import Main from "./pages/Main"
 import MetroContainer from "./pages/Metro/MetroContainer"
 import DocumentContainer from "./pages/JavaScript/Document/DocumentContainer"
+import OtherContainer from "./pages/JavaScript/Other/OtherContainer"
 
 import { initializeIcons } from "@uifabric/icons/lib"
 import { Fabric } from "office-ui-fabric-react/lib/Fabric"
@@ -38,6 +39,7 @@ ReactDOM.render(
           <Route exact path="/" component={Main} />
           <Route path="/metro" component={MetroContainer} />
           <Route path="/document" component={DocumentContainer} />
+          <Route path="/other" component={OtherContainer} />
         </Layout>
       </Fabric>
     </ConnectedRouter>

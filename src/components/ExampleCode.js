@@ -20,7 +20,7 @@ class ExampleCode extends React.Component {
     super(props)
 
     this.state = {
-      showCode: props.open
+      showCode: !props.hide
     }
   }
 

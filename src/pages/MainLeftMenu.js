@@ -41,6 +41,17 @@ export default () => {
                       }
                     ],
                     isExpanded: true
+                  },
+                  {
+                    name: "Other",
+                    links: [
+                      {
+                        name: "semicolons",
+                        url: "#/document/semicolons",
+                        key: "semicolons"
+                      }
+                    ],
+                    isExpanded: true
                   }
                 ]
               }

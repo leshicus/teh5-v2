@@ -66,9 +66,9 @@ const commandBarItems = {
                 href: "#/document"
               },
               {
-                key: "events",
-                name: "events",
-                disabled: true
+                key: "other",
+                name: "Other",
+                href: "#/other"
               }
             ]
           }

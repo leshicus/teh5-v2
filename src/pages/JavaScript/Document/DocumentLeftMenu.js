@@ -3,8 +3,7 @@ import { Route, Link, BrowserRouter as Router } from "react-router-dom"
 
 import { Nav } from "office-ui-fabric-react/lib/Nav"
 
-const LeftMenu = () => {
-  const _onBreadcrumbItemClicked = () => {}
+export default () => {
   return (
     <div className="ms-NavExample-LeftPane">
       <Nav
@@ -47,5 +46,3 @@ const LeftMenu = () => {
     </div>
   )
 }
-
-export default LeftMenu
