@@ -33,11 +33,11 @@ export default () => {
       </Link>
       <ul>
         <li>
-          In most cases semicolons in JS are not necessary. Because linebreak{" "}
-          <b>\n</b> terminate statements.
+          In most cases semicolons in JS are not necessary. Because linebreaker{" "}
+          <b>\n</b> terminates statement.
         </li>
         <li>ASI - automatic semicolon insertion</li>
-        <li>But in this examples you need them:</li>
+        <li>You need them:</li>
         <ul>
           <li>
             Before <b>( [ ` / + - , . -- ++</b>

@@ -56,8 +56,9 @@ class ExampleCode extends React.Component {
             style={{
               paddingTop: "10px",
               fontWeight: "600",
-              color: "rgb(255, 0, 246)"
+              color: "rgb(115, 115, 115)"
             }}
+            id={this.props.itemId}
           >
             {this.props.title}
           </div>
