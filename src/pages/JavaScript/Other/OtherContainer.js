@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 
 import LeftMenu from "./OtherLeftMenu"
 import SemicolonsContainer from "./SemicolonsContainer"
+import StyleGuideContainer from "./StyleGuide/StyleGuideContainer"
 
 class OtherContainer extends React.Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class OtherContainer extends React.Component {
             style={{ height: "100%" }}
           >
             <Route path="/other/semicolons" component={SemicolonsContainer} />
+            <Route path="/other/styleguide" component={StyleGuideContainer} />
           </div>
         </div>
       </div>

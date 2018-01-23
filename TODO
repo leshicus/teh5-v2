@@ -4,3 +4,6 @@ Todo:
     Add counter types. 
       With closure: cnt.key++
       With object property: obj.key = obj.key + 1
+  ☐ Add sub routes to topics on the page
+    For example /styleguide:wrapper
+  

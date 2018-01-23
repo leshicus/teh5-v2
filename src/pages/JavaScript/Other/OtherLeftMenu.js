@@ -17,6 +17,11 @@ export default () => {
                     name: "semicolons",
                     url: "#/other/semicolons",
                     key: "semicolons"
+                  },
+                  {
+                    name: "Style Guide",
+                    url: "#/other/styleguide",
+                    key: "styleguide"
                   }
                 ],
                 isExpanded: true
