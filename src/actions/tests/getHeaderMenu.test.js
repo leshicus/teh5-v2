@@ -1,8 +1,8 @@
-import * as foo from "./../general"
+import * as foo from "./../getHeaderMenu"
 import { ContextualMenuItemType } from "office-ui-fabric-react/lib/ContextualMenu"
 
-describe("general.js", () => {
-  it("arrays should be equal", () => {
+describe("Test file: getHeaderMenu.js", () => {
+  test("Test function: getItems", () => {
     const arr = [
       {
         name: "1",
@@ -12,7 +12,8 @@ describe("general.js", () => {
             name: "2"
           },
           {
-            name: "3"
+            name: "3",
+            href: "#/document"
           }
         ]
       },
@@ -26,7 +27,8 @@ describe("general.js", () => {
             iconName: "WindowsLogo"
           },
           {
-            name: "6"
+            name: "6",
+            href: "#/document"
           }
         ]
       },
@@ -35,18 +37,19 @@ describe("general.js", () => {
         iconName: "EditNote",
         items: [
           {
-            _itemType: "section",
-            _title: "9",
-            _items: [
-              {
-                name: "10",
-                href: "#/document"
-              },
-              {
-                name: "11",
-                href: "#/other"
-              }
-            ]
+            sectionProps: {
+              title: "9",
+              items: [
+                {
+                  name: "10",
+                  href: "#/document"
+                },
+                {
+                  name: "11",
+                  href: "#/other"
+                }
+              ]
+            }
           }
         ]
       }
@@ -64,7 +67,8 @@ describe("general.js", () => {
           },
           {
             key: 3,
-            name: "3"
+            name: "3",
+            href: "#/document"
           }
         ]
       },
@@ -85,7 +89,8 @@ describe("general.js", () => {
           },
           {
             key: 6,
-            name: "6"
+            name: "6",
+            href: "#/document"
           }
         ]
       },
@@ -123,7 +128,8 @@ describe("general.js", () => {
     expect(foo.getItems(arr)).toEqual(test)
   })
 
-  test("getHeaderItems", () => {
+  // элементы меню
+  test("Test function: getHeaderItems", () => {
     const arr = [
       {
         name: "Name1",
@@ -133,7 +139,8 @@ describe("general.js", () => {
             name: "2"
           },
           {
-            name: "3"
+            name: "3",
+            href: "#/document"
           }
         ]
       },
@@ -145,7 +152,8 @@ describe("general.js", () => {
             name: "5"
           },
           {
-            name: "6"
+            name: "6",
+            href: "#/document"
           }
         ]
       }
@@ -163,7 +171,8 @@ describe("general.js", () => {
           },
           {
             key: 3,
-            name: "3"
+            name: "3",
+            href: "#/document"
           }
         ]
       },
@@ -180,7 +189,8 @@ describe("general.js", () => {
           },
           {
             key: 6,
-            name: "6"
+            name: "6",
+            href: "#/document"
           }
         ]
       }
@@ -189,7 +199,8 @@ describe("general.js", () => {
     expect(foo.getHeaderItems(arr, { key: 0 })).toEqual(test)
   })
 
-  test("getMenuItems", () => {
+  // элементы внутри раскрывающегося списка меню
+  test("Test function: getMenuItems", () => {
     const arr = [
       {
         name: "1",
@@ -197,6 +208,21 @@ describe("general.js", () => {
       },
       {
         name: "2"
+      },
+      {
+        sectionProps: {
+          title: "9",
+          items: [
+            {
+              name: "10",
+              href: "#/document"
+            },
+            {
+              name: "11",
+              href: "#/other"
+            }
+          ]
+        }
       }
     ]
 
@@ -211,9 +237,94 @@ describe("general.js", () => {
       {
         key: 2,
         name: "2"
+      },
+      {
+        key: 3,
+        itemType: ContextualMenuItemType.Section,
+        sectionProps: {
+          title: "9",
+          key: 4,
+          items: [
+            {
+              key: 5,
+              name: "10",
+              href: "#/document"
+            },
+            {
+              key: 6,
+              name: "11",
+              href: "#/other"
+            }
+          ]
+        }
       }
     ]
 
     expect(foo.getMenuItems(arr, { key: 0 })).toEqual(test)
+  })
+
+  // секция section
+  test("Test function: getSectionProps", () => {
+    const sectionProps = {
+      title: "9",
+      items: [
+        {
+          name: "10",
+          href: "#/document"
+        },
+        {
+          name: "11",
+          href: "#/other"
+        }
+      ]
+    }
+
+    const test = {
+      title: "9",
+      key: 1,
+      items: [
+        {
+          key: 2,
+          name: "10",
+          href: "#/document"
+        },
+        {
+          key: 3,
+          name: "11",
+          href: "#/other"
+        }
+      ]
+    }
+
+    expect(foo.getSectionProps(sectionProps, { key: 0 })).toEqual(test)
+  })
+
+  // элементы секции section
+  test("Test function: getSectionPropsItems", () => {
+    const arr = [
+      {
+        name: "10",
+        href: "#/document"
+      },
+      {
+        name: "11",
+        href: "#/other"
+      }
+    ]
+
+    const test = [
+      {
+        key: 1,
+        name: "10",
+        href: "#/document"
+      },
+      {
+        key: 2,
+        name: "11",
+        href: "#/other"
+      }
+    ]
+
+    expect(foo.getSectionPropsItems(arr, { key: 0 })).toEqual(test)
   })
 })

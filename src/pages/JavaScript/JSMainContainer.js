@@ -1,11 +1,11 @@
 import React from "react"
 import { Route } from "react-router-dom"
 
-import LeftMenu from "./DocumentLeftMenu"
-import ScrollContainer from "./Scroll/ScrollContainer"
-import EventsContainer from "./EventsContainer"
-import DomContainer from "./DomContainer"
-import WindowContainer from "./WindowContainer"
+import LeftMenu from "./JSMainLeftMenu"
+import routes from "./routes"
+import { getItems } from "./../../actions/getRoutes"
+
+const items = getItems(routes)
 
 class DocumentContainer extends React.Component {
   constructor(props) {
@@ -28,10 +28,16 @@ class DocumentContainer extends React.Component {
             className="ms-Grid-col ms-sm12 ms-md9"
             style={{ height: "100%" }}
           >
-            <Route path="/document/window" component={WindowContainer} />
-            <Route path="/document/dom" component={DomContainer} />
-            <Route path="/document/scroll" component={ScrollContainer} />
-            <Route path="/document/events" component={EventsContainer} />
+            {items.map((item, idx) => {
+              return (
+                <Route
+                  exact
+                  path={item.url}
+                  component={item.component}
+                  key={idx}
+                />
+              )
+            })}
           </div>
         </div>
       </div>
