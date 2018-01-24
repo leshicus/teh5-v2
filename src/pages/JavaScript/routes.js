@@ -10,25 +10,26 @@ export default [
     links: [
       {
         name: "document",
+        url: "/javascript/document",
         links: [
           {
             name: "window",
-            url: "/javascript/document/window",
+            url: "/window",
             component: WindowContainer
           },
           {
             name: "DOM",
-            url: "/javascript/document/dom",
+            url: "/dom",
             component: DomContainer
           },
           {
             name: "Scroll",
-            url: "/javascript/document/scroll",
+            url: "/scroll",
             component: ScrollContainer
           },
           {
             name: "Events",
-            url: "/javascript/document/events",
+            url: "/events",
             component: EventsContainer
           }
         ],
@@ -36,15 +37,16 @@ export default [
       },
       {
         name: "Other",
+        url: "/javascript/other",
         links: [
           {
             name: "Semicolons",
-            url: "/javascript/other/semicolons",
+            url: "/semicolons",
             component: SemicolonsContainer
           },
           {
             name: "Style Guides",
-            url: "/javascript/other/styleguide",
+            url: "/styleguide",
             component: StyleGuideContainer
           }
         ],

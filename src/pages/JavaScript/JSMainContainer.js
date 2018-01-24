@@ -3,7 +3,7 @@ import { Route } from "react-router-dom"
 
 import LeftMenu from "./JSMainLeftMenu"
 import routes from "./routes"
-import { getItems } from "./../../actions/getRoutes"
+import { getItems, getItems1 } from "./../../actions/getRoutes"
 
 const items = getItems(routes)
 
@@ -25,7 +25,7 @@ class DocumentContainer extends React.Component {
             <LeftMenu />
           </div>
           <div
-            className="ms-Grid-col ms-sm12 ms-md9"
+            className="ms-Grid-col ms-sm12 ms-md8"
             style={{ height: "100%" }}
           >
             {items.map((item, idx) => {
@@ -38,6 +38,14 @@ class DocumentContainer extends React.Component {
                 />
               )
             })}
+          </div>
+          <div
+            style={{
+              width: "175px"
+            }} /* className="ms-Grid-col ms-sm6 ms-md4 ms-lg2" */
+            className="ms-Grid-col"
+          >
+            <LeftMenu />
           </div>
         </div>
       </div>

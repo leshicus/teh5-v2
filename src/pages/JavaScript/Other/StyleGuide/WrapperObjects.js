@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "office-ui-fabric-react/lib/Link"
 
-import TopicTitle from "./../../../../components/TopicTitle"
+import Topic from "./../../../../components/Topic"
 import ExampleCode from "./../../../../components/ExampleCode"
 
 const code_1 = `var x = new Boolean(false);
@@ -18,8 +18,7 @@ typeof new Boolean(0) == 'object';`
 
 export default () => {
   return (
-    <div>
-      <TopicTitle title="Wrapper objects for primitive types" />
+    <Topic title="Wrapper objects for primitive types">
       <ExampleCode
         title="Do not use wrapper objects for primitive types"
         code={code_1}
@@ -32,6 +31,6 @@ export default () => {
         language="javascript"
         alert={"success"}
       />
-    </div>
+    </Topic>
   )
 }

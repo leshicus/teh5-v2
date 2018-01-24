@@ -40,7 +40,7 @@ export const getLinksArray_1 = (links, key) => {
       }
 
       if (link.links && link.links.length) {
-        obj["links"] = getLinksArray_2(link.links, key)
+        obj["links"] = getLinksArray_2(link, key)
       }
 
       result.push(obj)
@@ -52,10 +52,10 @@ export const getLinksArray_1 = (links, key) => {
   return result
 }
 
-export const getLinksArray_2 = (links, key) => {
+export const getLinksArray_2 = (upperLink, key) => {
   const result = []
 
-  for (let link of links) {
+  for (let link of upperLink.links) {
     const obj = {}
 
     if (link.name) {
@@ -65,7 +65,7 @@ export const getLinksArray_2 = (links, key) => {
       obj["name"] = link.name
 
       if (link.url) {
-        obj["url"] = "#" + link.url
+        obj["url"] = "#" + upperLink.url + link.url
       }
 
       result.push(obj)

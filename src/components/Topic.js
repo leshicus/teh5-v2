@@ -5,7 +5,7 @@ import ExampleCode from "./ExampleCode"
 
 export default props => {
   return (
-    <div>
+    <div style={{ paddingBottom: "20px" }}>
       <TopicTitle title={props.title} />
       {props.children}
     </div>
