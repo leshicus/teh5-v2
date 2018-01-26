@@ -8,7 +8,7 @@ export default [
         url: "/css/other",
         links: [
           {
-            name: "MarginPadding",
+            name: "Margin vs Padding",
             url: "/marginpadding",
             component: MarginPaddingContainer
           }

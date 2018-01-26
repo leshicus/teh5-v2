@@ -1,18 +1,26 @@
 import React from "react"
 import { Link } from "office-ui-fabric-react/lib/Link"
 
-import FuncDecWithinBlock from "./FuncDecWithinBlock"
-import WrapperObjects from "./WrapperObjects"
-import MethodPropDef from "./MethodPropDef"
-import BooleanExpression from "./BooleanExpression"
+import LeftMenu from "./../../../../components/MainContainer/LeftMenu"
 
-export default () => {
+export default props => {
   return (
-    <div>
-      <FuncDecWithinBlock />
-      <WrapperObjects />
-      <MethodPropDef />
-      <BooleanExpression />
+    <div className="ms-Grid" style={{ height: "100%" }}>
+      <div className="ms-Grid-row" style={{ height: "100%" }}>
+        <div
+          className="ms-Grid-col ms-sm12 ms-md12 ms-lg9"
+          style={{ height: "100%" }}
+        >
+          {props.item &&
+            props.item.links &&
+            props.item.links.map((item, idx) => {
+              return <item.component item={item} key={idx} />
+            })}
+        </div>
+        <div className="ms-Grid-col ms-lg3">
+          {props.item && props.item.links && <LeftMenu routes={props.item} />}
+        </div>
+      </div>
     </div>
   )
 }

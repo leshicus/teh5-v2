@@ -17,7 +17,7 @@ const Footer = props => (
   >
     <Link href="https://github.com/leshicus/teh5-v2">GitHub</Link>
     <Devider />
-    <Label>teh5.ru</Label>
+    <Label>teh5.ru/new</Label>
   </div>
 )
 

@@ -25,8 +25,8 @@ export default () => {
                 <li>
                   Each <b>renderer</b> contains corresponding DOM object and
                   calculated styles.
-                  <li>Render tree describes visual representation of a DOM</li>
                 </li>
+                <li>Render tree describes visual representation of a DOM</li>
                 <li>
                   <b>Layout</b> - coordinates of each render tree object
                 </li>

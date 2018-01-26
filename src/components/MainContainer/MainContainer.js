@@ -1,36 +1,50 @@
 import React from "react"
-import { Route } from "react-router-dom"
+import { Route, withRouter } from "react-router-dom"
+import { connect } from "react-redux"
 
 import LeftMenu from "./LeftMenu"
 import { getItems } from "./../../actions/getRoutes"
 
-export default props => {
-  const items = getItems(props.routes)
+class MainContainer extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-  return (
-    <div className="ms-Grid" style={{ height: "100%" }}>
-      <div className="ms-Grid-row" style={{ height: "100%" }}>
-        <div
-          style={{
-            width: "175px"
-          }} /* className="ms-Grid-col ms-sm6 ms-md4 ms-lg2" */
-          className="ms-Grid-col"
-        >
-          <LeftMenu routes={props.routes} />
-        </div>
-        <div className="ms-Grid-col ms-sm12 ms-md8" style={{ height: "100%" }}>
-          {items.map((item, idx) => {
-            return (
-              <Route
-                exact
-                path={item.url}
-                component={item.component}
-                key={idx}
-              />
-            )
-          })}
+  render() {
+    const items = getItems(this.props.routes)
+
+    return (
+      <div className="ms-Grid" style={{ height: "100%" }}>
+        <div className="ms-Grid-row" style={{ height: "100%" }}>
+          <div className="ms-Grid-col ms-lg3">
+            <LeftMenu routes={this.props.routes} />
+          </div>
+          <div
+            className="ms-Grid-col ms-sm12 ms-md12 ms-lg9"
+            style={{ height: "100%" }}
+          >
+            {items.map((item, idx) => {
+              return (
+                <Route
+                  exact
+                  path={item.url}
+                  render={() => <item.component item={item} />}
+                  key={idx}
+                />
+              )
+            })}
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
+
+const mapStateToProps = (state, ownProps) => ({
+  ...state
+})
+
+// we are using withRouter because instead router will lag one step
+// it occurs only when in receives state
+// without connection router works fine
+export default withRouter(connect(mapStateToProps)(MainContainer))

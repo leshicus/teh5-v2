@@ -3,13 +3,27 @@ export const getItems = blocks => {
   let key = { key: 0 }
   let objLink = {}
 
-  for (let block of blocks) {
-    if (block.links && block.links.length) {
+  if (blocks.forEach) {
+    for (let block of blocks) {
+      if (block.links && block.links.length) {
+        key.key = key.key + 1
+
+        objLink = {
+          key: key.key,
+          links: getLinksArray_1(block.links, key)
+        }
+
+        result.push(objLink)
+      }
+    }
+  } else {
+    // * случай меню справа, там нет блоков
+    if (blocks.links && blocks.links.length) {
       key.key = key.key + 1
 
       objLink = {
         key: key.key,
-        links: getLinksArray_1(block.links, key)
+        links: getLinksArray_1(blocks.links, key)
       }
 
       result.push(objLink)
