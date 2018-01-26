@@ -33,7 +33,15 @@ export default [
     items: [
       {
         name: "JavaScript",
-        href: "#/javascript"
+        href: "#/javascript/other"
+      },
+      {
+        name: "CSS",
+        href: "#/css/other"
+      },
+      {
+        name: "Browser",
+        href: "#/browser/other"
       }
     ]
   }

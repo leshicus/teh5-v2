@@ -14,7 +14,9 @@ import configStore from "./util/configStore"
 // View
 import Layout from "./components/Layout/Layout"
 import MetroContainer from "./pages/Metro/MetroContainer"
-import JSMainContainer from "./pages/JavaScript/JSMainContainer"
+import JSMainContainer from "./pages/JavaScript"
+import CssMainContainer from "./pages/Css"
+import BrowserMainContainer from "./pages/Browser"
 
 import { initializeIcons } from "@uifabric/icons/lib"
 import { Fabric } from "office-ui-fabric-react/lib/Fabric"
@@ -36,6 +38,8 @@ ReactDOM.render(
           {/* <Redirect exact from="/" to="/document/window" /> */}
           <Route path="/metro" component={MetroContainer} />
           <Route path="/javascript" component={JSMainContainer} />
+          <Route path="/css" component={CssMainContainer} />
+          <Route path="/browser" component={BrowserMainContainer} />
         </Layout>
       </Fabric>
     </ConnectedRouter>
