@@ -53,6 +53,14 @@ export const getLinksArray_1 = (links, key) => {
         obj["isExpanded"] = link.isExpanded
       }
 
+      if (link.component) {
+        obj["component"] = link.component
+      }
+
+      if (link.onClick) {
+        obj["onClick"] = link.onClick
+      }
+
       if (link.links && link.links.length) {
         obj["links"] = getLinksArray_2(link, key)
       }

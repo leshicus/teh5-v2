@@ -10,6 +10,24 @@ class MainContainer extends React.Component {
     super(props)
   }
 
+  // componentDidMount() {
+  //   var left = document.getElementById("sideMenu");
+  //   var stop = (left.offsetTop - 40);
+  //   console.log(left, stop)
+  //   window.onscroll = function (e) {
+  //     var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+  //     console.log(scrollTop, left.offsetTop);
+  //     // left.offsetTop;
+
+  //     if (scrollTop >= stop) {
+  //       left.className = 'stick';
+  //     } else {
+  //       left.className = '';
+  //     }
+
+  //   }
+  // }
+
   render() {
     const items = getItems(this.props.routes)
 

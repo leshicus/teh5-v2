@@ -1,3 +1,5 @@
+import { onClickSubLink } from './../../actions/general'
+
 import ScrollContainer from "./Document/Scroll/ScrollContainer"
 import EventsContainer from "./Document/EventsContainer"
 import DomContainer from "./Document/DomContainer"
@@ -56,19 +58,23 @@ export default [
             links: [
               {
                 name: "FuncDecWithinBlock",
-                component: FuncDecWithinBlock
+                component: FuncDecWithinBlock,
+                onClick: onClickSubLink
               },
               {
                 name: "WrapperObjects",
-                component: WrapperObjects
+                component: WrapperObjects,
+                onClick: onClickSubLink
               },
               {
                 name: "MethodPropDef",
-                component: MethodPropDef
+                component: MethodPropDef,
+                onClick: onClickSubLink
               },
               {
                 name: "BooleanExpression",
-                component: BooleanExpression
+                component: BooleanExpression,
+                onClick: onClickSubLink
               }
             ]
           }

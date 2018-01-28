@@ -35,9 +35,9 @@ undefined != false
 {} != false
 `
 
-export default () => {
+export default (props) => {
   return (
-    <Topic title="True and False Boolean Expressions">
+    <Topic title="True and False Boolean Expressions" {...props}>
       Boolean expressions: ==, ===, !=, !==, > <br />
       <ExampleCode
         title="true in Boolean Expressions"

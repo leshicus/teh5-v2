@@ -12,9 +12,9 @@ const code_2 = `if (x) {
   var foo = function foo() {}
 }`
 
-export default () => {
+export default (props) => {
   return (
-    <Topic title="Function Declarations Within Blocks">
+    <Topic title="Function Declarations Within Blocks"  {...props}>
       <ExampleCode
         title="Do not declare function inside a block"
         code={code_1}

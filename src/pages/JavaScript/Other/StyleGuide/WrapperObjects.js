@@ -16,9 +16,9 @@ if (x) {
 typeof Boolean(0) == 'boolean';
 typeof new Boolean(0) == 'object';`
 
-export default () => {
+export default (props) => {
   return (
-    <Topic title="Wrapper objects for primitive types">
+    <Topic title="Wrapper objects for primitive types" {...props}>
       <ExampleCode
         title="Do not use wrapper objects for primitive types"
         code={code_1}

@@ -13,9 +13,9 @@ function Foo() {
   this.bar = value;
 }`
 
-export default () => {
+export default (props) => {
   return (
-    <Topic title="Method and property definitions">
+    <Topic title="Method and property definitions" {...props}>
       <ExampleCode
         title="Attach method in prototype"
         code={code_1}
