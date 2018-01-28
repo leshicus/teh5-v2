@@ -45,9 +45,9 @@ export const getLinksArray_1 = (links, key) => {
 
       obj["name"] = link.name
 
-      if (link.url) {
-        obj["url"] = "#" + link.url
-      }
+      // if (link.url) {
+      //   obj["url"] = "#" + link.url
+      // }
 
       if (link.isExpanded) {
         obj["isExpanded"] = link.isExpanded
