@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "office-ui-fabric-react/lib/Link"
-import LeftMenu from "./../../../../components/MainContainer/LeftMenu"
-// import"./../../../../components/MainContainer/LeftMenu.css"
+
+import LeftMenu from "./LeftMenu"
 
 export default props => {
   return (

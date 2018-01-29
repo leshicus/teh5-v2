@@ -1,12 +1,18 @@
-import { onClickSubLink } from './../../actions/general'
+import { onClickSubLink } from "./../../actions/general"
 
 import ScrollContainer from "./Document/Scroll/ScrollContainer"
 import EventsContainer from "./Document/EventsContainer"
-import DomContainer from "./Document/DomContainer"
+
+import DomContainer from "./Document/Dom"
+import Dom from "./Document/Dom/Dom"
+import Navigation from "./Document/Dom/Navigation"
+import Siblings from "./Document/Dom/Siblings"
+import IterateNodeList from "./Document/Dom/IterateNodeList"
+
 import WindowContainer from "./Document/WindowContainer"
 import SemicolonsContainer from "./Other/SemicolonsContainer"
 
-import StyleGuideContainer from "./Other/StyleGuide/StyleGuideContainer"
+import StyleGuideContainer from "./Other/StyleGuide"
 import FuncDecWithinBlock from "./Other/StyleGuide/FuncDecWithinBlock"
 import WrapperObjects from "./Other/StyleGuide/WrapperObjects"
 import MethodPropDef from "./Other/StyleGuide/MethodPropDef"
@@ -27,7 +33,29 @@ export default [
           {
             name: "DOM",
             url: "/dom",
-            component: DomContainer
+            component: DomContainer,
+            links: [
+              {
+                name: "Dom",
+                component: Dom,
+                onClick: onClickSubLink
+              },
+              {
+                name: "Navigation",
+                component: Navigation,
+                onClick: onClickSubLink
+              },
+              {
+                name: "Siblings",
+                component: Siblings,
+                onClick: onClickSubLink
+              },
+              {
+                name: "Iteration over Node List",
+                component: IterateNodeList,
+                onClick: onClickSubLink
+              }
+            ]
           },
           {
             name: "Scroll",
