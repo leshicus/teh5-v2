@@ -33,16 +33,21 @@ export default [
     items: [
       {
         name: "JavaScript",
-        href: "#/javascript/other"
+        href: "#/javascript/document/dom"
       },
       {
         name: "CSS",
-        href: "#/css/other"
+        href: "#/css/other/marginpadding"
       },
       {
         name: "Browser",
-        href: "#/browser/other"
+        href: "#/browser/other/webpagerendering"
       }
     ]
+  },
+  {
+    name: "JSDocs",
+    iconName: "Documentation",
+    href: "#/jsdocs"
   }
 ]

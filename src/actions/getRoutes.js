@@ -8,17 +8,17 @@ export const getItems = blocks => {
        * So it will show ALL sub-components when #/javascript/document is clicked
        */
 
-      if (firstLevelItem.url) {
-        for (let secondLevelItem of firstLevelItem.links) {
-          if (secondLevelItem.name) {
-            const obj = Object.assign({}, secondLevelItem)
+      // if (firstLevelItem.url) {
+      //   for (let secondLevelItem of firstLevelItem.links) {
+      //     if (secondLevelItem.name) {
+      //       const obj = Object.assign({}, secondLevelItem)
 
-            obj["url"] = firstLevelItem["url"]
+      //       obj["url"] = firstLevelItem["url"]
 
-            result.push(obj)
-          }
-        }
-      }
+      //       result.push(obj)
+      //     }
+      //   }
+      // }
 
       // Show ONLY sub-component when at sub-route #/javascript/document/window
       for (let secondLevelItem of firstLevelItem.links) {

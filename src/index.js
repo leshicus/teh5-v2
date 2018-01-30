@@ -13,6 +13,7 @@ import configStore from "./util/configStore"
 
 // View
 import Layout from "./components/Layout/Layout"
+import DocContainer from "./pages/Docs"
 import MetroContainer from "./pages/Metro/MetroContainer"
 import JSMainContainer from "./pages/JavaScript"
 import CssMainContainer from "./pages/Css"
@@ -28,6 +29,8 @@ import { Fabric } from "office-ui-fabric-react/lib/Fabric"
 initializeIcons(/* optional base url */)
 
 const history = createHashHistory()
+history.replace("/")
+
 const store = configStore(history)
 
 ReactDOM.render(
@@ -36,6 +39,7 @@ ReactDOM.render(
       <Fabric /* className="ms-font-m" */ style={{ height: "100%" }}>
         <Layout>
           {/* <Redirect exact from="/" to="/document/window" /> */}
+          <Route path="/jsdocs" component={DocContainer} />
           <Route path="/metro" component={MetroContainer} />
           <Route path="/javascript" component={JSMainContainer} />
           <Route path="/css" component={CssMainContainer} />
