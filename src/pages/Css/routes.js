@@ -7,7 +7,9 @@ import Units from "./Other/Other/Units"
 import Positions from "./Other/Other/Position"
 import DisplayVisibility from "./Other/Other/DisplayVisibility"
 
-// import("./Other/Other").then(module => console.log(module.default))
+import * as otherComponents from "./Other/Other"
+console.log(otherComponents)
+console.log(Object.keys(otherComponents))
 
 export default [
   {
