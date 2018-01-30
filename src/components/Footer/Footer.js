@@ -1,5 +1,5 @@
 import React from "react"
-import { Label } from "office-ui-fabric-react/lib/Label"
+// import { Label } from "office-ui-fabric-react/lib/Label"
 import { Link } from "office-ui-fabric-react/lib/Link"
 import Devider from "./../Devider"
 
@@ -17,7 +17,7 @@ const Footer = props => (
   >
     <Link href="https://github.com/leshicus/teh5-v2">GitHub</Link>
     <Devider />
-    <Label>teh5.ru/new</Label>
+    <Link href="http://teh5.ru/new">teh5.ru</Link>
   </div>
 )
 

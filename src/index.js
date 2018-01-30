@@ -5,7 +5,7 @@ import "./index.css"
 // Router
 import createHashHistory from "history/createHashHistory"
 import { ConnectedRouter } from "react-router-redux"
-import { Route, Redirect } from "react-router-dom"
+import { Route /* , Redirect */ } from "react-router-dom"
 
 // Store
 import { Provider } from "react-redux"
@@ -18,6 +18,7 @@ import MetroContainer from "./pages/Metro/MetroContainer"
 import JSMainContainer from "./pages/JavaScript"
 import CssMainContainer from "./pages/Css"
 import BrowserMainContainer from "./pages/Browser"
+import QA from "./pages/QA"
 
 import { initializeIcons } from "@uifabric/icons/lib"
 import { Fabric } from "office-ui-fabric-react/lib/Fabric"
@@ -29,8 +30,7 @@ import { Fabric } from "office-ui-fabric-react/lib/Fabric"
 initializeIcons(/* optional base url */)
 
 const history = createHashHistory()
-history.replace("/")
-
+// history.replace("/") // clears url after page reload
 const store = configStore(history)
 
 ReactDOM.render(
@@ -44,6 +44,7 @@ ReactDOM.render(
           <Route path="/javascript" component={JSMainContainer} />
           <Route path="/css" component={CssMainContainer} />
           <Route path="/browser" component={BrowserMainContainer} />
+          <Route path="/qa" component={QA} />
         </Layout>
       </Fabric>
     </ConnectedRouter>

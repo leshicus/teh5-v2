@@ -1,5 +1,5 @@
 import React from "react"
-import { DefaultButton, IButtonProps } from "office-ui-fabric-react/lib/Button"
+import { DefaultButton } from "office-ui-fabric-react/lib/Button"
 
 import SyntaxHighlighter from "react-syntax-highlighter/prism"
 import okaidia from "react-syntax-highlighter/styles/prism/okaidia"

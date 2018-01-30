@@ -42,6 +42,10 @@ export default [
       {
         name: "Browser",
         href: "#/browser/other/webpagerendering"
+      },
+      {
+        name: "Q&A",
+        href: "#/qa"
       }
     ]
   },

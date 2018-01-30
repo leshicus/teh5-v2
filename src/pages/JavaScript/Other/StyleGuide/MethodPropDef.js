@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "office-ui-fabric-react/lib/Link"
 
 import Topic from "./../../../../components/Topic"
 import ExampleCode from "./../../../../components/ExampleCode"
@@ -13,7 +12,7 @@ function Foo() {
   this.bar = value;
 }`
 
-export default (props) => {
+export default props => {
   return (
     <Topic title="Method and property definitions" {...props}>
       <ExampleCode

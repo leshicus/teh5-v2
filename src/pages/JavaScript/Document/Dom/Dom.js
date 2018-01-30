@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "office-ui-fabric-react/lib/Link"
 
 import Topic from "./../../../../components/Topic"
 import ExampleCode from "./../../../../components/ExampleCode"
@@ -15,12 +14,13 @@ export default props => {
   return (
     <Topic title="DOM" {...props}>
       <ul>
-        <li>DOM - HTML in form of an object</li>
-        <li>DOM - HTML with required elemets</li>
-        <p>
-          <u>Example:</u> {`<html>`}, {`<body>`}, {`<tbody>`}, forgotten
-          finishing tags
-        </p>
+        <li>DOM - is HTML in form of an object</li>
+        <li>
+          DOM - is HTML with required elements, such as: <br />
+          <mark>
+            {`<html>`}, {`<body>`}, {`<tbody>`}, forgotten finishing tags
+          </mark>
+        </li>
         <li>Browser makes the DOM</li>
         <li>
           <b>document</b> - root element of the DOM

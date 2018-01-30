@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "office-ui-fabric-react/lib/Link"
 
 import Topic from "./../../../components/Topic"
 import ExampleCode from "./../../../components/ExampleCode"
@@ -15,7 +14,7 @@ const code_2 = `padding: "10px",
 border: "1px dashed white",
 background: "red"`
 
-const Demo_1 = () => (
+const Demo1 = () => (
   <Demo width="100px">
     <div
       style={{
@@ -38,7 +37,7 @@ const Demo_1 = () => (
   </Demo>
 )
 
-const Demo_2 = () => (
+const Demo2 = () => (
   <Demo width="100px">
     <div
       style={{
@@ -63,7 +62,7 @@ const Demo_2 = () => (
 
 export default () => {
   return (
-    <Topic title="When to use margin and padding">
+    <Topic title="Margin vs padding">
       <ul>
         <li>
           <b>Vertical</b> margins auto-collapse (overlap) in block element.
@@ -74,9 +73,9 @@ export default () => {
         <li>Padding is included in background color</li>
       </ul>
       <ExampleCode title="Margins" code={code_1} language="javascript" />
-      <Demo_1 />
+      <Demo1 />
       <ExampleCode title="Paddings" code={code_2} language="javascript" />
-      <Demo_2 />
+      <Demo2 />
     </Topic>
   )
 }

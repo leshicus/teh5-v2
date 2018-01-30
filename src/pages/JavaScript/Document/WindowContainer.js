@@ -35,7 +35,7 @@ export default () => {
                 language="javascript"
               />
             </li>
-            <li>JavaScript: Object, Array, Date, Number, Function</li>
+            <li>JS: Object, Array, Date, Number, Function</li>
           </ul>
         </li>
       </ul>

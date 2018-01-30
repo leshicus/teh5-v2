@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "office-ui-fabric-react/lib/Link"
 
 import Topic from "./../../../../components/Topic"
 import ExampleCode from "./../../../../components/ExampleCode"
@@ -16,7 +15,7 @@ if (x) {
 typeof Boolean(0) == 'boolean';
 typeof new Boolean(0) == 'object';`
 
-export default (props) => {
+export default props => {
   return (
     <Topic title="Wrapper objects for primitive types" {...props}>
       <ExampleCode

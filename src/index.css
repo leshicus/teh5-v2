@@ -8,3 +8,9 @@ body,
 #root {
     height: 100%;
 }
+
+mark {
+    background-color: #5af2ff;
+    /* color: black; */
+    font-weight: 600;
+}
