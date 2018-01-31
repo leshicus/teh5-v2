@@ -2,9 +2,9 @@ import React from "react"
 
 import Topic from "./../../../../components/Topic"
 
-export default () => {
+export default props => {
   return (
-    <Topic title="Absolute, relative, fixed, static positions">
+    <Topic title="Absolute, relative, fixed, static positions" {...props}>
       <ul>
         <li>
           <b>Absolute</b> - relative to <mark>parent element</mark>, or{" "}

@@ -2,9 +2,9 @@ import React from "react"
 
 import Topic from "./../../../../components/Topic"
 
-export default () => {
+export default props => {
   return (
-    <Topic title="Units: px, em % or pt">
+    <Topic title="Units: px, em % or pt" {...props}>
       <ul>
         <li>
           <b>px</b> - gives control, 1px is sharp. Not cascade.

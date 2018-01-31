@@ -1,10 +1,10 @@
 import React from "react"
 
-import Topic from "./../../../components/Topic"
-import ExampleCode from "./../../../components/ExampleCode"
-import Demo from "./../../../components/Demo"
+import Topic from "./../../../../components/Topic"
+import ExampleCode from "./../../../../components/ExampleCode"
+import Demo from "./../../../../components/Demo"
 
-import "./MarginPaddingContainer.css"
+import "./MarginPadding.css"
 
 const code_1 = `margin: "10px",
 border: "1px dashed white",
@@ -60,9 +60,9 @@ const Demo2 = () => (
   </Demo>
 )
 
-export default () => {
+export default props => {
   return (
-    <Topic title="Margin vs padding">
+    <Topic title="Margin vs padding" {...props}>
       <ul>
         <li>
           <b>Vertical</b> margins auto-collapse (overlap) in block element.
