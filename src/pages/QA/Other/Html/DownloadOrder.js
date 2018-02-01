@@ -18,9 +18,9 @@ const code_2 = `<head>
 <link href="style2.css" rel="stylesheet">
 </body>`
 
-export default () => {
+export default props => {
   return (
-    <Topic title="Download order">
+    <Topic title="Download order" {...props}>
       <ul>
         <li>
           Styles download and parse independently

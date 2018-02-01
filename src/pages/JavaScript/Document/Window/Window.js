@@ -1,6 +1,6 @@
 import React from "react"
-import TopicTitle from "./../../../components/TopicTitle"
-import ExampleCode from "./../../../components/ExampleCode"
+import TopicTitle from "./../../../../components/TopicTitle"
+import ExampleCode from "./../../../../components/ExampleCode"
 
 const code_1 = `window.open('http://ya.ru') // open new window/tab with URL http://ya.ru`
 const code_2 = `alert( location.href ); // http://localhost:3000/#/document/window`

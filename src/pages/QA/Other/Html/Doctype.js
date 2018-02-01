@@ -5,9 +5,9 @@ import ExampleCode from "./../../../../components/ExampleCode"
 
 const code_1 = `<!DOCTYPE html>`
 
-export default () => {
+export default props => {
   return (
-    <Topic title="Doctype">
+    <Topic title="Doctype" {...props}>
       <ExampleCode title="HTML5 doctype" code={code_1} language="html" />
       <ul>
         <li>

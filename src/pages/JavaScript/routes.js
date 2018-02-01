@@ -1,22 +1,22 @@
 import { onClickSubLink } from "./../../actions/general"
 
-import ScrollContainer from "./Document/Scroll/ScrollContainer"
-import EventsContainer from "./Document/EventsContainer"
+import ScrollContainer from "./Document/Scroll"
+import EventsContainer from "./Document/Event"
 
 import DomContainer from "./Document/Dom"
-import Dom from "./Document/Dom/Dom"
-import Navigation from "./Document/Dom/Navigation"
-import Siblings from "./Document/Dom/Siblings"
-import IterateNodeList from "./Document/Dom/IterateNodeList"
+// import Dom from "./Document/Dom/Dom"
+// import Navigation from "./Document/Dom/Navigation"
+// import Siblings from "./Document/Dom/Siblings"
+// import IterateNodeList from "./Document/Dom/IterateNodeList"
 
-import WindowContainer from "./Document/WindowContainer"
+import WindowContainer from "./Document/Window"
 import SemicolonsContainer from "./Other/SemicolonsContainer"
 
 import StyleGuideContainer from "./Other/StyleGuide"
-import FuncDecWithinBlock from "./Other/StyleGuide/FuncDecWithinBlock"
-import WrapperObjects from "./Other/StyleGuide/WrapperObjects"
-import MethodPropDef from "./Other/StyleGuide/MethodPropDef"
-import BooleanExpression from "./Other/StyleGuide/BooleanExpression"
+// import FuncDecWithinBlock from "./Other/StyleGuide/FuncDecWithinBlock"
+// import WrapperObjects from "./Other/StyleGuide/WrapperObjects"
+// import MethodPropDef from "./Other/StyleGuide/MethodPropDef"
+// import BooleanExpression from "./Other/StyleGuide/BooleanExpression"
 
 export default [
   {
@@ -33,29 +33,29 @@ export default [
           {
             name: "DOM",
             url: "/dom",
-            component: DomContainer,
-            links: [
-              {
-                name: "Dom",
-                component: Dom,
-                onClick: onClickSubLink
-              },
-              {
-                name: "Navigation",
-                component: Navigation,
-                onClick: onClickSubLink
-              },
-              {
-                name: "Siblings",
-                component: Siblings,
-                onClick: onClickSubLink
-              },
-              {
-                name: "Iteration over Node List",
-                component: IterateNodeList,
-                onClick: onClickSubLink
-              }
-            ]
+            component: DomContainer
+            // links: [
+            //   {
+            //     name: "Dom",
+            //     component: Dom,
+            //     onClick: onClickSubLink
+            //   },
+            //   {
+            //     name: "Navigation",
+            //     component: Navigation,
+            //     onClick: onClickSubLink
+            //   },
+            //   {
+            //     name: "Siblings",
+            //     component: Siblings,
+            //     onClick: onClickSubLink
+            //   },
+            //   {
+            //     name: "Iteration over Node List",
+            //     component: IterateNodeList,
+            //     onClick: onClickSubLink
+            //   }
+            // ]
           },
           {
             name: "Scroll",
@@ -82,29 +82,29 @@ export default [
           {
             name: "Style Guides",
             url: "/styleguide",
-            component: StyleGuideContainer,
-            links: [
-              {
-                name: "FuncDecWithinBlock",
-                component: FuncDecWithinBlock,
-                onClick: onClickSubLink
-              },
-              {
-                name: "WrapperObjects",
-                component: WrapperObjects,
-                onClick: onClickSubLink
-              },
-              {
-                name: "MethodPropDef",
-                component: MethodPropDef,
-                onClick: onClickSubLink
-              },
-              {
-                name: "BooleanExpression",
-                component: BooleanExpression,
-                onClick: onClickSubLink
-              }
-            ]
+            component: StyleGuideContainer
+            // links: [
+            //   {
+            //     name: "FuncDecWithinBlock",
+            //     component: FuncDecWithinBlock,
+            //     onClick: onClickSubLink
+            //   },
+            //   {
+            //     name: "WrapperObjects",
+            //     component: WrapperObjects,
+            //     onClick: onClickSubLink
+            //   },
+            //   {
+            //     name: "MethodPropDef",
+            //     component: MethodPropDef,
+            //     onClick: onClickSubLink
+            //   },
+            //   {
+            //     name: "BooleanExpression",
+            //     component: BooleanExpression,
+            //     onClick: onClickSubLink
+            //   }
+            // ]
           }
         ],
         isExpanded: true

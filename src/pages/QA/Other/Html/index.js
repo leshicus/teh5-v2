@@ -2,4 +2,9 @@ import React from "react"
 
 import SubMainContainer from "./../../../../components/MainContainer/SubMainContainer"
 
-export default props => <SubMainContainer {...props} />
+import * as сomponents from "./"
+delete сomponents["Index"]
+
+export default props => (
+  <SubMainContainer {...props} subComponents={сomponents} />
+)

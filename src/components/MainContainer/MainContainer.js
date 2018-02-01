@@ -11,7 +11,7 @@ class MainContainer extends React.Component {
   // }
 
   render() {
-    console.log(this.props.routes)
+    // console.log(this.props.routes)
     const items = getItems(this.props.routes)
 
     return (

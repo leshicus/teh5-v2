@@ -5,8 +5,8 @@ import LeftMenu from "./LeftMenu"
 
 export default props => {
   const arrCompKeys = Object.keys(props.subComponents)
-  const arrCompValues = Object.values(props.subComponents)
-  console.log(props.subComponents)
+  // const arrCompValues = Object.values(props.subComponents)
+  //console.log(props.subComponents)
   const links = []
   let subRoutes = []
 
@@ -24,7 +24,7 @@ export default props => {
     subRoutes.push({ links: links })
   }
 
-  console.log(subRoutes)
+  // console.log(subRoutes)
 
   return (
     <div className="ms-Grid" style={{ height: "100%" }}>

@@ -1,7 +1,5 @@
 import React from "react"
 
-const EventsContainer = () => {
+export default () => {
   return <div>Under reconstruction</div>
 }
-
-export default EventsContainer

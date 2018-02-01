@@ -8,9 +8,9 @@ const code_1 = `//Switch text direction
 
 // pseudo class :root refers to <html> element`
 
-export default () => {
+export default props => {
   return (
-    <Topic title="Other">
+    <Topic title="Other" {...props}>
       <ExampleCode code={code_1} language="html" />
     </Topic>
   )

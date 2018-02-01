@@ -1,5 +1,3 @@
-import { onClickSubLink } from "./../../actions/general"
-
 import MarginPaddingContainer from "./Other/Margin"
 import OtherContainer from "./Other/Other"
 
@@ -19,23 +17,6 @@ export default [
             name: "Other",
             url: "/other",
             component: OtherContainer
-            // links: [
-            //   {
-            //     name: "Units",
-            //     component: Units,
-            //     onClick: onClickSubLink
-            //   },
-            //   {
-            //     name: "Position",
-            //     component: Positions,
-            //     onClick: onClickSubLink
-            //   },
-            //   {
-            //     name: "Display & Visibility",
-            //     component: DisplayVisibility,
-            //     onClick: onClickSubLink
-            //   }
-            // ]
           }
         ],
         isExpanded: true
