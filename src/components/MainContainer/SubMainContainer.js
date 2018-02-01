@@ -1,30 +1,12 @@
 import React from "react"
-import { onClickSubLink } from "./../../actions/general"
+
+import { getSubRoutes } from "./../../actions/getRoutes"
 
 import LeftMenu from "./LeftMenu"
 
 export default props => {
+  const subRoutes = getSubRoutes(props.subComponents)
   const arrCompKeys = Object.keys(props.subComponents)
-  // const arrCompValues = Object.values(props.subComponents)
-  //console.log(props.subComponents)
-  const links = []
-  let subRoutes = []
-
-  if (arrCompKeys.length > 1) {
-    for (let key of arrCompKeys) {
-      const comp = props.subComponents[key]
-
-      links.push({
-        name: key,
-        component: comp,
-        onClick: onClickSubLink
-      })
-    }
-
-    subRoutes.push({ links: links })
-  }
-
-  // console.log(subRoutes)
 
   return (
     <div className="ms-Grid" style={{ height: "100%" }}>

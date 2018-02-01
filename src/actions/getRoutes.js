@@ -1,3 +1,5 @@
+import { onClickSubLink } from "./general"
+
 export const getItems = blocks => {
   let result = []
 
@@ -34,4 +36,26 @@ export const getItems = blocks => {
   }
 
   return result
+}
+
+export const getSubRoutes = subComponents => {
+  const arrCompKeys = Object.keys(subComponents)
+  const links = []
+  let subRoutes = []
+
+  if (arrCompKeys.length > 1) {
+    for (let key of arrCompKeys) {
+      const comp = subComponents[key]
+
+      links.push({
+        name: key,
+        component: comp,
+        onClick: onClickSubLink
+      })
+    }
+
+    subRoutes.push({ links: links })
+  }
+
+  return subRoutes
 }

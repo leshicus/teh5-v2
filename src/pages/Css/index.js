@@ -1,6 +1,32 @@
 import React from "react"
 
 import MainContainer from "./../../components/MainContainer/MainContainer"
-import routes from "./routes"
+
+import MarginPaddingContainer from "./Other/Margin"
+import OtherContainer from "./Other/Other"
+
+const routes = [
+  {
+    links: [
+      {
+        name: "Other",
+        url: "/css/other",
+        links: [
+          {
+            name: "Margin vs Padding",
+            url: "/marginpadding",
+            component: MarginPaddingContainer
+          },
+          {
+            name: "Other",
+            url: "/other",
+            component: OtherContainer
+          }
+        ],
+        isExpanded: true
+      }
+    ]
+  }
+]
 
 export default () => <MainContainer routes={routes} />
