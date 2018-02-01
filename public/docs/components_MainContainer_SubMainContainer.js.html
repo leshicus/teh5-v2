@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/MainContainer/SubMainContainer.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,57 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/MainContainer/SubMainContainer.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
 
+import { getSubRoutes } from "./../../actions/getRoutes"
 
-    <h3> </h3>
+import LeftMenu from "./LeftMenu"
 
+/**
+ * Sub-screen of the section, choosen article, which will be seen after item in left menu
+ * was selected.
+ */
 
+const SubMainContainer = props => {
+  const subRoutes = getSubRoutes(props.subComponents)
+  const arrCompKeys = Object.keys(props.subComponents)
 
+  return (
+    &lt;div className="ms-Grid" style={{ height: "100%" }}>
+      &lt;div className="ms-Grid-row" style={{ height: "100%" }}>
+        &lt;article
+          className="ms-Grid-col ms-sm12 ms-md12 ms-lg9"
+          style={{ height: "100%" }}
+        >
+          {arrCompKeys.map((key, idx) => {
+            const item = props.subComponents[key]
+            const comp = { component: item }
 
+            return &lt;comp.component item={item} key={idx} id={key} />
+          })}
+        &lt;/article>
 
+        &lt;div className="ms-Grid-col ms-lg3">
+          {subRoutes &amp;&amp; &lt;LeftMenu routes={subRoutes} />}
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  )
+}
 
-
-
-
-
-    
-
-
-
-
-
+export default SubMainContainer
+</code></pre>
+        </article>
+    </section>
 
 
 

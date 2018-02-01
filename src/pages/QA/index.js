@@ -23,4 +23,7 @@ const routes = [
   }
 ]
 
+/**
+ * Main container for QA page
+ */
 export default () => <MainContainer routes={routes} />

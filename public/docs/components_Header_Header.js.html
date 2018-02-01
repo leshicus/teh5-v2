@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/Header/Header.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,33 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/Header/Header.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
 
+import { CommandBar } from "office-ui-fabric-react/lib/CommandBar"
 
-    <h3> </h3>
+import { getItems } from "./../../actions/getHeaderMenu"
+import commandBarItems from "./routes"
 
+const items = getItems(commandBarItems)
 
+/**
+ * Main header with navigation menu
+ */
+const Header = () => &lt;CommandBar isSearchBoxVisible={false} items={items} />
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Header
+</code></pre>
+        </article>
+    </section>
 
 
 

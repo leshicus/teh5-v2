@@ -60,4 +60,7 @@ const routes = [
   }
 ]
 
+/**
+ * Main container for JavaScript page
+ */
 export default () => <MainContainer routes={routes} />

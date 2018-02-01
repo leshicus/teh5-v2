@@ -29,4 +29,7 @@ const routes = [
   }
 ]
 
+/**
+ * Main container for CSS page
+ */
 export default () => <MainContainer routes={routes} />

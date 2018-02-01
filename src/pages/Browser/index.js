@@ -23,4 +23,7 @@ const routes = [
   }
 ]
 
+/**
+ * Main container for Browser page
+ */
 export default () => <MainContainer routes={routes} />

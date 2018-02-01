@@ -5,13 +5,12 @@ import { connect } from "react-redux"
 import LeftMenu from "./LeftMenu"
 import { getItems } from "./../../actions/getRoutes"
 
+/**
+ * Main screen of the article, which will be seen after an item in the main header menu
+ * was selected. Connected to the Redux store.
+ */
 class MainContainer extends React.Component {
-  // constructor(props) {
-  //   super(props)
-  // }
-
   render() {
-    // console.log(this.props.routes)
     const items = getItems(this.props.routes)
 
     return (

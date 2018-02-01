@@ -1,14 +1,17 @@
-import React from "react";
+import React from "react"
 
-const Devider = props => (
-    <div
-        style={{
-            padding: "0 5px",
-            opacity: "0.5"
-        }}
-    >
-        |
-    </div>
-);
+/**
+ * Vertical devider between links or labels or whatever
+ */
+const Devider = () => (
+  <div
+    style={{
+      padding: "0 5px",
+      opacity: "0.5"
+    }}
+  >
+    |
+  </div>
+)
 
-export default Devider;
+export default Devider

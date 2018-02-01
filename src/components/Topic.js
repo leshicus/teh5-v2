@@ -1,13 +1,17 @@
 import React from "react"
 
 import TopicTitle from "./TopicTitle"
-// import ExampleCode from "./ExampleCode"
 
-export default props => {
+/**
+ * Represents the section of an article
+ */
+const Topic = props => {
   return (
-    <div style={{ paddingBottom: "20px" }} id={props.id}>
+    <section style={{ paddingBottom: "20px" }} id={props.id}>
       <TopicTitle title={props.title} />
       {props.children}
-    </div>
+    </section>
   )
 }
+
+export default Topic

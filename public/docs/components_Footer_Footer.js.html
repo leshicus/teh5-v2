@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/Footer/Footer.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,43 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/Footer/Footer.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
+import { Link } from "office-ui-fabric-react/lib/Link"
+import Devider from "./../Devider"
 
+/**
+ * Footer of the site
+ */
+const Footer = () => (
+  &lt;div
+    style={{
+      display: "flex",
+      height: "40px",
+      background: "rgb(244, 244, 244)",
+      justifyContent: "center",
+      flexDirection: "row",
+      alignItems: "center"
+    }}
+  >
+    &lt;Link href="https://github.com/leshicus/teh5-v2">GitHub&lt;/Link>
+    &lt;Devider />
+    &lt;Link href="http://teh5.ru/new">teh5.ru&lt;/Link>
+  &lt;/div>
+)
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Footer
+</code></pre>
+        </article>
+    </section>
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: actions/mergeDeep.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,50 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: actions/mergeDeep.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Simple is object check.
+ * @param item
+ * @returns {boolean}
+ */
+const isObject = item => {
+    return (
+        item &amp;&amp;
+        typeof item === "object" &amp;&amp;
+        !Array.isArray(item) &amp;&amp;
+        item !== null
+    );
+};
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+/**
+ * Deep merge two objects.
+ * @param target
+ * @param source
+ */
+export const mergeDeep = (target, source) => {
+    if (isObject(target) &amp;&amp; isObject(source)) {
+        Object.keys(source).forEach(key => {
+            if (isObject(source[key])) {
+                if (!target[key]) Object.assign(target, { [key]: {} });
+                mergeDeep(target[key], source[key]);
+            } else {
+                Object.assign(target, { [key]: source[key] });
+            }
+        });
+    }
+    return target;
+};
+</code></pre>
+        </article>
+    </section>
 
 
 

@@ -2,7 +2,10 @@ import React from "react"
 
 const Title = props => <div>{props.title}</div>
 
-export default props => {
+/**
+ * Component with the demo example inside it
+ */
+const Demo = props => {
   const styles = {
     main: {
       marginBottom: "10px",
@@ -20,3 +23,5 @@ export default props => {
     </div>
   )
 }
+
+export default Demo

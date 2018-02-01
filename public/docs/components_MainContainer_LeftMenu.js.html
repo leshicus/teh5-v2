@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/MainContainer/LeftMenu.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,44 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/MainContainer/LeftMenu.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
+// import { Route, Link, BrowserRouter as Router } from "react-router-dom"
 
+import { Nav } from "office-ui-fabric-react/lib/Nav"
+import "./LeftMenu.css"
+import { getItems } from "./../../actions/getLeftMenu"
 
-    <h3> </h3>
+/**
+ * Left menu navigation inside MainContainer. On click shows new article.
+ * Right menu navigation inside SubMainContainer. On click navigates to section inside of the article.
+ */
+const LeftMenu = props => {
+  const items = getItems(props.routes)
 
+  return (
+    &lt;div className="ms-NavExample-LeftPane stick">
+      &lt;Nav
+        groups={items}
+        expandedStateText={"expanded"}
+        collapsedStateText={"collapsed"}
+      />
+    &lt;/div>
+  )
+}
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default LeftMenu
+</code></pre>
+        </article>
+    </section>
 
 
 

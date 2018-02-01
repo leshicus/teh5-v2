@@ -4,6 +4,10 @@ import { createStore, applyMiddleware } from "redux"
 import { composeWithDevTools } from "redux-devtools-extension"
 // import reducers from "./../reducers";
 
+/**
+ * Configures Redux store, adding history and other middlewares to it
+ * @param {object} history
+ */
 const configStore = history => {
   const middlewares = [
     thunk,

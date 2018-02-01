@@ -15,6 +15,9 @@ const style = {
 }
 const highlightStyle = mergeDeep(okaidia, style)
 
+/**
+ * Represents the header of a section
+ */
 class TopicTitle extends React.Component {
   constructor(props) {
     super(props)

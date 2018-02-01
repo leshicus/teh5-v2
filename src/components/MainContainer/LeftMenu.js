@@ -5,7 +5,11 @@ import { Nav } from "office-ui-fabric-react/lib/Nav"
 import "./LeftMenu.css"
 import { getItems } from "./../../actions/getLeftMenu"
 
-export default props => {
+/**
+ * Left menu navigation inside MainContainer. On click shows new article.
+ * Right menu navigation inside SubMainContainer. On click navigates to section inside of the article.
+ */
+const LeftMenu = props => {
   const items = getItems(props.routes)
 
   return (
@@ -18,3 +22,5 @@ export default props => {
     </div>
   )
 }
+
+export default LeftMenu

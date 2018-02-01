@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/Topic.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,35 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/Topic.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
 
+import TopicTitle from "./TopicTitle"
 
-    <h3> </h3>
+/**
+ * Represents the section of an article
+ */
+const Topic = props => {
+  return (
+    &lt;section style={{ paddingBottom: "20px" }} id={props.id}>
+      &lt;TopicTitle title={props.title} />
+      {props.children}
+    &lt;/section>
+  )
+}
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Topic
+</code></pre>
+        </article>
+    </section>
 
 
 

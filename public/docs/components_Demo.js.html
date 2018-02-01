@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: components/Demo.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,45 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: components/Demo.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
 
+const Title = props => &lt;div>{props.title}&lt;/div>
 
-    <h3> </h3>
+/**
+ * Component with the demo example inside it
+ */
+const Demo = props => {
+  const styles = {
+    main: {
+      marginBottom: "10px",
+      marginTop: "10px",
+      width: props.width,
+      height: props.height,
+      border: "1px dashed black"
+    }
+  }
 
+  return (
+    &lt;div style={styles.main}>
+      {props.title &amp;&amp; &lt;Title />}
+      {props.children}
+    &lt;/div>
+  )
+}
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Demo
+</code></pre>
+        </article>
+    </section>
 
 
 

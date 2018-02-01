@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: util/configStore.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,44 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: util/configStore.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import thunk from "redux-thunk"
+import { routerReducer, routerMiddleware } from "react-router-redux"
+import { createStore, applyMiddleware } from "redux"
+import { composeWithDevTools } from "redux-devtools-extension"
+// import reducers from "./../reducers";
 
+/**
+ * Configures Redux store, adding history and other middlewares to it
+ * @param {object} history
+ */
+const configStore = history => {
+  const middlewares = [
+    thunk,
+    routerMiddleware(history) /*, orchestrate(processManager)*/
+  ]
 
-    <h3> </h3>
+  const store = createStore(
+    // reducers,
+    routerReducer,
+    composeWithDevTools(applyMiddleware(...middlewares))
+  )
 
+  return store
+}
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default configStore
+</code></pre>
+        </article>
+    </section>
 
 
 

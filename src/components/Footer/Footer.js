@@ -1,9 +1,11 @@
 import React from "react"
-// import { Label } from "office-ui-fabric-react/lib/Label"
 import { Link } from "office-ui-fabric-react/lib/Link"
 import Devider from "./../Devider"
 
-const Footer = props => (
+/**
+ * Footer of the site
+ */
+const Footer = () => (
   <div
     style={{
       display: "flex",
@@ -13,7 +15,6 @@ const Footer = props => (
       flexDirection: "row",
       alignItems: "center"
     }}
-    /* className="ms-font-m" */
   >
     <Link href="https://github.com/leshicus/teh5-v2">GitHub</Link>
     <Devider />
