@@ -11,9 +11,17 @@ Source code for my portfolio web site:
 
 * `npm start`
 
+### Build
+
+* `npm run build`
+
 ### Test
 
 * `npm run test`
+
+### Create JSDocs (in public/docs)
+
+* `npm run doc`
 
 ***
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
