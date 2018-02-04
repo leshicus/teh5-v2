@@ -6,4 +6,23 @@ Todo:
       With object property: obj.key = obj.key + 1
   ☐ Add sub routes to topics on the page
     For example /styleguide:wrapper
+
+Learn JS:
+  ☐ Asynchronous programming. Event loop. Event handler. Single thread.
+  ☐ Microservice architecture, example.
+  ☐ Types of prototypal inheritance: 
+    Delegation (prototypal chain)
+    Concatenative (mixins, Object.assign())
+    Functional (function used to create closure for private state/encapsulation)
+  ☐ Functional programming
+    Pure functions
+    Avoid side effects
+    Simple function composition
+    Features that support FP - first-cass functions, HOF, functions as arguments/values.
+  ☐ Difference between paradigms: imperative/procedural along with OOP and functional programming. 
+    OOP with prototypal inheritance (Object.create())
+    Classical inheritance (constructor functions with `new`)
+  ☐ Cover questions mentioned there: http://davidshariff.com/blog/preparing-for-a-front-end-web-development-interview-in-2017/
+
+
   
