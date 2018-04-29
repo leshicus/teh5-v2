@@ -5,8 +5,10 @@
   "homepage": "./",
   "dependencies": {
     "@uifabric/icons": "^5.3.0",
+    "flow-bin": "^0.71.0",
     "office-ui-fabric-react": "^5.40.2",
     "prop-types": "^15.6.0",
+    "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
@@ -24,7 +26,8 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom --verbose --runInBand",
     "eject": "react-scripts eject",
-    "doc": "jsdoc src -r -d public/docs"
+    "doc": "jsdoc src -r -d public/docs",
+    "flow": "flow"
   },
   "devDependencies": {
     "babel-plugin-wildcard": "^4.0.0",

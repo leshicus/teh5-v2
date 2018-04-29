@@ -1,37 +1,39 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import "./index.css"
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
 
 // Router
-import createHashHistory from "history/createHashHistory"
-import { ConnectedRouter } from "react-router-redux"
-import { Route /* , Redirect */ } from "react-router-dom"
+import createHashHistory from "history/createHashHistory";
+import { ConnectedRouter } from "react-router-redux";
+import { Route /* , Redirect */ } from "react-router-dom";
 
 // Store
-import { Provider } from "react-redux"
-import configStore from "./util/configStore"
+import { Provider } from "react-redux";
+import configStore from "./util/configStore";
 
 // View
-import Layout from "./components/Layout/Layout"
-import DocContainer from "./pages/Docs"
-import MetroContainer from "./pages/Metro/MetroContainer"
-import JSMainContainer from "./pages/JavaScript"
-import CssMainContainer from "./pages/Css"
-import BrowserMainContainer from "./pages/Browser"
-import QA from "./pages/QA"
+import Layout from "./components/Layout/Layout";
+import DocContainer from "./pages/Docs";
+import MetroContainer from "./pages/Metro/MetroContainer";
+import JSMainContainer from "./pages/JavaScript";
+import CssMainContainer from "./pages/Css";
+import BrowserMainContainer from "./pages/Browser";
+import QA from "./pages/QA";
 
-import { initializeIcons } from "@uifabric/icons/lib"
-import { Fabric } from "office-ui-fabric-react/lib/Fabric"
+import { initializeIcons } from "@uifabric/icons/lib";
+import { Fabric } from "office-ui-fabric-react/lib/Fabric";
+
+import "./todo/lenses";
 
 // import registerServiceWorker from "./registerServiceWorker"
 
 // registerServiceWorker()
 
-initializeIcons(/* optional base url */)
+initializeIcons(/* optional base url */);
 
-const history = createHashHistory()
+const history = createHashHistory();
 // history.replace("/") // clears url after page reload
-const store = configStore(history)
+const store = configStore(history);
 
 ReactDOM.render(
   <Provider store={store}>
@@ -50,9 +52,9 @@ ReactDOM.render(
     </ConnectedRouter>
   </Provider>,
   document.getElementById("root")
-)
+);
 
 // * HMR
 if (module.hot) {
-  module.hot.accept()
+  module.hot.accept();
 }

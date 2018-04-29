@@ -1,0 +1,12 @@
+[ignore]
+.*/.history/.*
+[include]
+
+[libs]
+
+[lints] 
+
+[options]
+suppress_comment=\\(.\\|\n\\)*\\$ExpectError
+
+[strict]
