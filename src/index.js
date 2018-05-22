@@ -58,3 +58,5 @@ ReactDOM.render(
 if (module.hot) {
   module.hot.accept();
 }
+
+// adds some addition in master
