@@ -14,7 +14,7 @@ type User = {
 };
 type Users = Array<User>;
 
-const users: Users = [
+let users: Users = [
   {
     id: 1,
     fio: {
@@ -23,7 +23,7 @@ const users: Users = [
     },
     cars: [
       {
-        name: "BMW",
+        name: "bmw",
         year: "2018"
       },
       {
@@ -77,7 +77,7 @@ users[0] = myLensId.set("100", users[0]);
 
 const myLensFio = myLens(myGetter("fio"), mySetter("fio"));
 // Bad, because fio loose property "lastname"
-users[0] = myLensFio.set({ name: "Alex_1" }, users[0]);
+// users[0] = myLensFio.set({ name: "Alex_1" }, users[0]);
 // console.log(myLensFio.get(users[0]));
 
 // * RAMDA
@@ -87,10 +87,34 @@ const lenseRamdaFio = R.lensProp("fio");
 // console.log(R.view(lenseRamdaFio, users[1]));
 
 const pathUserName = R.lensPath(["fio", "name"]);
-const pathUserLastname = R.lensPath(["fio", "lastname"]);
 // Good
 users[1] = R.set(pathUserName, "Max_1", users[1]);
-users[1] = R.set(pathUserLastname, "Fray_1", users[1]);
 console.log(R.view(pathUserName, users[1]));
-console.log(R.view(pathUserLastname, users[1]));
-console.log(users[1]);
+
+// lensPath - to get access to deep property in array with index 0
+const firstCarName = R.lensPath(["cars", 0, "name"]);
+users[0] = R.set(firstCarName, "bmw x5", users[0]);
+console.log(R.view(firstCarName, users[0]));
+
+// over - to apply to some function to propperty
+const lastNameLens = R.lensPath(["fio", "lastname"]);
+// users[1] = R.over(lastNameLens, R.toUpper, users[1]);
+// console.log(R.view(lastNameLens, users[1]));
+
+// convert all fio.name to uppercase
+const nameLens = R.lensPath(["fio", "name"]);
+// users = R.map(R.over(nameLens, R.toUpper), users);
+// console.log(users);
+
+// convert everything (fio, cars.name) to uppercase
+const carNameLens = R.lensProp("name");
+const carLens = R.lensProp("cars");
+users = R.map(
+  R.compose(
+    R.over(nameLens, R.toUpper),
+    R.over(lastNameLens, R.toUpper),
+    R.over(carLens, R.map(R.over(carNameLens, R.toUpper)))
+  ),
+  users
+);
+console.log(users);
