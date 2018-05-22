@@ -1,11 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-<<<<<<< HEAD
 import { initializeIcons } from "@uifabric/icons/lib";
 import { Fabric } from "office-ui-fabric-react/lib/Fabric";
-=======
->>>>>>> add some addition in dev
 
 // Router
 import createHashHistory from "history/createHashHistory";
@@ -25,13 +22,8 @@ import CssMainContainer from "./pages/Css";
 import BrowserMainContainer from "./pages/Browser";
 import QA from "./pages/QA";
 
-<<<<<<< HEAD
 // import "./todo/lenses";
 import "./todo/HOC";
-=======
-import { initializeIcons } from "@uifabric/icons/lib";
-import { Fabric } from "office-ui-fabric-react/lib/Fabric";
->>>>>>> add some addition in dev
 
 // import registerServiceWorker from "./registerServiceWorker"
 
