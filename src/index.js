@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import { initializeIcons } from "@uifabric/icons/lib";
+import { Fabric } from "office-ui-fabric-react/lib/Fabric";
 
 // Router
 import createHashHistory from "history/createHashHistory";
@@ -20,10 +22,8 @@ import CssMainContainer from "./pages/Css";
 import BrowserMainContainer from "./pages/Browser";
 import QA from "./pages/QA";
 
-import { initializeIcons } from "@uifabric/icons/lib";
-import { Fabric } from "office-ui-fabric-react/lib/Fabric";
-
-import "./todo/lenses";
+// import "./todo/lenses";
+import "./todo/HOC";
 
 // import registerServiceWorker from "./registerServiceWorker"
 
