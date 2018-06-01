@@ -1,8 +1,9 @@
-import React from "react"
-import { DefaultButton } from "office-ui-fabric-react/lib/Button"
+import React from "react";
+import { DefaultButton } from "office-ui-fabric-react/lib/Button";
 
-import Topic from "./../../../../components/Topic"
-import ExampleCode from "./../../../../components/ExampleCode"
+import Topic from "./../../../../components/Topic";
+import ExampleCode from "./../../../../components/ExampleCode";
+import { MyEnhancedComp } from "./../../../../todo/reduxStore";
 
 const code_5 = `<div id="parent" style="hidden:true;">
   <p>Some text</p>
@@ -10,21 +11,21 @@ const code_5 = `<div id="parent" style="hidden:true;">
   <p>
     <!-- some comment -->
   </p>  
-</div>`
+</div>`;
 
 class WorkingExample extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       current: ""
-    }
+    };
   }
 
   componentDidMount() {
     this.setState({
       current: document.getElementById("parent").firstChild
-    })
+    });
   }
 
   render() {
@@ -41,13 +42,13 @@ class WorkingExample extends React.Component {
           primary={true}
           style={{ marginTop: "8px" }}
           onClick={() => {
-            const current = this.state.current
-            const next = current.previousSibling
+            const current = this.state.current;
+            const next = current.previousSibling;
 
             if (next) {
               this.setState({
                 current: next
-              })
+              });
             }
           }}
         />
@@ -58,13 +59,13 @@ class WorkingExample extends React.Component {
           style={{ marginLeft: "8px", marginTop: "8px" }}
           primary={true}
           onClick={() => {
-            const current = this.state.current
-            const next = current.nextSibling
+            const current = this.state.current;
+            const next = current.nextSibling;
 
             if (next) {
               this.setState({
                 current: next
-              })
+              });
             }
           }}
         />
@@ -80,15 +81,16 @@ class WorkingExample extends React.Component {
           {this.state.current.innerHTML}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default props => {
+export default (props) => {
   return (
     <Topic title="Navigation on siblings" {...props}>
+      <MyEnhancedComp rSelf={0} />
       <ExampleCode title="Siblings" code={code_5} language="jsx" />
       <WorkingExample />
     </Topic>
-  )
-}
+  );
+};
