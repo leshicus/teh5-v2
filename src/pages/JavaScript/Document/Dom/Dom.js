@@ -1,16 +1,16 @@
-import React from "react"
+import React from "react";
 
-import Topic from "./../../../../components/Topic"
-import ExampleCode from "./../../../../components/ExampleCode"
+import Topic from "./../../../../components/Topic";
+import ExampleCode from "./../../../../components/ExampleCode";
 
 const code_1 = `document.documentElement; // html
 document.body; // body
 document.head; // head
 
 document.body.style.backgroundColor = 'red'; // set body color
-document.body.style.backgroundColor = ''; // unset body color`
+document.body.style.backgroundColor = ''; // unset body color`;
 
-export default props => {
+export default (props) => {
   return (
     <Topic title="DOM" {...props}>
       <ul>
@@ -41,5 +41,5 @@ export default props => {
         </li>
       </ul>
     </Topic>
-  )
-}
+  );
+};

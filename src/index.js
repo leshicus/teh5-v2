@@ -23,7 +23,8 @@ import BrowserMainContainer from "./pages/Browser";
 import QA from "./pages/QA";
 
 // import "./todo/lenses";
-import "./todo/HOC";
+// import "./todo/reduxStore";
+// import "./todo/HOC";
 
 // import registerServiceWorker from "./registerServiceWorker"
 
@@ -58,12 +59,3 @@ ReactDOM.render(
 if (module.hot) {
   module.hot.accept();
 }
-
-// adds some addition in master
-// some addition in dev branch
-
-// First change in server
-// Second change in server
-
-// First change in client
-// Second change in client
