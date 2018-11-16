@@ -1,8 +1,9 @@
-import React from "react"
-import { DefaultButton } from "office-ui-fabric-react/lib/Button"
+import React from 'react'
+import { DefaultButton } from 'office-ui-fabric-react/lib/Button'
 
-import Topic from "./../../../../components/Topic"
-import ExampleCode from "./../../../../components/ExampleCode"
+import Topic from './../../../../components/Topic'
+import ExampleCode from './../../../../components/ExampleCode'
+// import { MyEnhancedComp } from "./../../../../todo/reduxStore";
 
 const code_5 = `<div id="parent" style="hidden:true;">
   <p>Some text</p>
@@ -17,36 +18,36 @@ class WorkingExample extends React.Component {
     super(props)
 
     this.state = {
-      current: ""
+      current: '',
     }
   }
 
   componentDidMount() {
     this.setState({
-      current: document.getElementById("parent").firstChild
+      current: document.getElementById('parent').firstChild,
     })
   }
 
   render() {
     return (
       <div>
-        <div id="parent" style={{ visibility: "hidden", marginTop: "-80px" }}>
+        <div id="parent" style={{ visibility: 'hidden', marginTop: '-80px' }}>
           <p>Some text</p>
           <div>Some element</div>
-          <p dangerouslySetInnerHTML={{ __html: "<!-- some comment -->" }} />
+          <p dangerouslySetInnerHTML={{ __html: '<!-- some comment -->' }} />
         </div>
         <DefaultButton
           data-automation-id="left"
           text="<- previousSibling"
           primary={true}
-          style={{ marginTop: "8px" }}
+          style={{ marginTop: '8px' }}
           onClick={() => {
             const current = this.state.current
             const next = current.previousSibling
 
             if (next) {
               this.setState({
-                current: next
+                current: next,
               })
             }
           }}
@@ -55,7 +56,7 @@ class WorkingExample extends React.Component {
         <DefaultButton
           data-automation-id="right"
           text="nextSibling ->"
-          style={{ marginLeft: "8px", marginTop: "8px" }}
+          style={{ marginLeft: '8px', marginTop: '8px' }}
           primary={true}
           onClick={() => {
             const current = this.state.current
@@ -63,16 +64,16 @@ class WorkingExample extends React.Component {
 
             if (next) {
               this.setState({
-                current: next
+                current: next,
               })
             }
           }}
         />
         <div
           style={{
-            display: "inline-block",
-            marginTop: "12px",
-            marginLeft: "8px"
+            display: 'inline-block',
+            marginTop: '12px',
+            marginLeft: '8px',
           }}
         >
           <u>Result:</u>
@@ -87,6 +88,7 @@ class WorkingExample extends React.Component {
 export default props => {
   return (
     <Topic title="Navigation on siblings" {...props}>
+      {/* <MyEnhancedComp rSelf={0} /> */}
       <ExampleCode title="Siblings" code={code_5} language="jsx" />
       <WorkingExample />
     </Topic>

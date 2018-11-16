@@ -1,57 +1,62 @@
 export default [
   {
-    name: "Portfolio",
+    name: 'Portfolio',
     disabled: true,
     items: [
       {
-        name: "1"
+        name: '1',
       },
       {
-        name: "2"
-      }
-    ]
+        name: '2',
+      },
+    ],
   },
   {
-    name: "CSS Frameworks",
-    iconName: "Css",
+    name: 'CSS Frameworks',
+    iconName: 'Css',
     disabled: true,
     items: [
       {
-        name: "Metro",
+        name: 'Metro',
         iconProps: {
-          iconName: "WindowsLogo"
-        }
+          iconName: 'WindowsLogo',
+        },
       },
       {
-        name: "Semantic UI"
-      }
-    ]
+        name: 'Semantic UI',
+      },
+    ],
   },
   {
-    name: "Cheat sheets",
-    iconName: "EditNote",
+    name: 'Cheat sheets',
+    iconName: 'EditNote',
     items: [
       {
-        name: "JavaScript",
-        href: "#/javascript/document/dom"
+        name: 'JavaScript',
+        href: '#/javascript/document/dom',
       },
       {
-        name: "CSS",
-        href: "#/css/other/marginpadding"
+        name: 'CSS',
+        href: '#/css/other/marginpadding',
       },
       {
-        name: "Browser",
-        href: "#/browser/other/webpagerendering"
+        name: 'Browser',
+        href: '#/browser/other/webpagerendering',
       },
       {
-        name: "Q&A",
-        href: "#/qa"
-      }
-    ]
+        name: 'Q&A',
+        href: '#/qa',
+      },
+    ],
   },
   {
-    name: "JSDocs",
-    iconName: "Documentation",
-    href: "#/jsdocs"
-  }
+    name: 'JSDocs',
+    iconName: 'Documentation',
+    href: '#/jsdocs',
+  },
+  {
+    name: 'Playground',
+    // iconName: "Documentation",
+    href: '#/playground',
+  },
 ]
