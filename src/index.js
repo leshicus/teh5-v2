@@ -20,7 +20,7 @@ import JSMainContainer from './pages/JavaScript'
 import CssMainContainer from './pages/Css'
 import BrowserMainContainer from './pages/Browser'
 import QA from './pages/QA'
-import { Playground } from './Playground'
+import { Playground } from './playground/Playground'
 
 initializeIcons(/* optional base url */)
 
