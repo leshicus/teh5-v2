@@ -9,14 +9,12 @@ const styles = {
 export const ListItem = ({
   children,
   to,
-  onClick,
 }: {
   children: string,
   to: string,
-  onClick: () => void,
 }) => {
   return (
-    <div style={styles.root} onClick={onClick}>
+    <div style={styles.root}>
       <Link to={to}>{children}</Link>
     </div>
   )
