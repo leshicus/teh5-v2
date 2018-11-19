@@ -5,8 +5,4 @@ const styles = {
   root: {},
 }
 
-export class First extends React.Component<{}> {
-  render() {
-    return <div style={styles.root}>1</div>
-  }
-}
+export default () => <div style={styles.root}>1</div>

@@ -7,7 +7,7 @@ import { Fabric } from 'office-ui-fabric-react/lib/Fabric'
 // Router
 import createHashHistory from 'history/createHashHistory'
 import { ConnectedRouter } from 'react-router-redux'
-import { Route /* , Redirect */ } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
 // Store
 import { Provider } from 'react-redux'
@@ -50,12 +50,3 @@ ReactDOM.render(
 if (module.hot) {
   module.hot.accept()
 }
-
-// adds some addition in master
-// some addition in dev branch
-
-// First change in server
-// Second change in server
-
-// First change in client
-// Second change in client
