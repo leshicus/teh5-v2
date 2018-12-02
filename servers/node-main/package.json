@@ -2,9 +2,10 @@
   "name": "example-create-react-app-express",
   "version": "1.0.0",
   "license": "MIT",
+  "main": "index.js",
   "scripts": {
     "client": "cd client && yarn start",
-    "server": "nodemon index.js",
+    "server": "nodemon --inspect=0.0.0.0:9229 index.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
   "dependencies": {

@@ -5,35 +5,37 @@ networks:
     driver: bridge
 
 services:
-  python-api:
-    build: ./servers/python
-    volumes:
-      - ./servers/python:/usr/src/app
-    ports:
-      - ${PORT_PYTHON_API}:80
-    networks:
-      - front
+  # python-api:
+  #   build: ./servers/python
+  #   volumes:
+  #     - ./servers/python:/usr/src/app
+  #   ports:
+  #     - ${PORT_PYTHON_API}:80
+  #   networks:
+  #     - front
 
   node-api:
     build: ./servers/node
-    command: nodemon -L index.js && tail -f /dev/null
+    command: yarn start
     volumes:
       - ./servers/node:/usr/project
     ports:
       - ${PORT_NODE_API}:3000
+      - ${PORT_NODE_API_DEBUG}:5858
     networks:
       - front
 
-  node-main:
-    build: ./servers/node-main
-    command: yarn run dev
-    volumes:
-      - ./client:/usr/project/client
-      - ./servers/node-main:/usr/project
-    ports:
-      - ${PORT_NODE_MAIN}:3000
-    networks:
-      - front
-    depends_on:
-      - node-api
-      - python-api
+  # node-main:
+  #   build: ./servers/node-main
+  #   command: yarn run dev
+  #   volumes:
+  #     - ./client:/usr/project/client
+  #     - ./servers/node-main:/usr/project
+  #   ports:
+  #     - ${PORT_NODE_MAIN}:3000
+  #     - ${PORT_NODE_MAIN_DEBUG}:9229
+  #   networks:
+  #     - front
+    # depends_on:
+      # - node-api
+      # - python-api
