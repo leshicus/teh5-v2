@@ -14,28 +14,29 @@ services:
   #   networks:
   #     - front
 
-  node-api:
-    build: ./servers/node
-    command: yarn start
-    volumes:
-      - ./servers/node:/usr/project
-    ports:
-      - ${PORT_NODE_API}:3000
-      - ${PORT_NODE_API_DEBUG}:5858
-    networks:
-      - front
-
-  # node-main:
-  #   build: ./servers/node-main
-  #   command: yarn run dev
+  # node-api:
+  #   build: ./servers/node
+  #   command: yarn start
   #   volumes:
-  #     - ./client:/usr/project/client
-  #     - ./servers/node-main:/usr/project
+  #     - ./servers/node:/usr/project
   #   ports:
-  #     - ${PORT_NODE_MAIN}:3000
-  #     - ${PORT_NODE_MAIN_DEBUG}:9229
+  #     - ${PORT_NODE_API}:3000
+  #     - ${PORT_NODE_API_DEBUG}:5858
   #   networks:
   #     - front
+
+  node-main:
+    build: ./servers/node-main
+    command: yarn run dev
+    volumes:
+      - ./client:/usr/project/client
+      - ./servers/node-main:/usr/project
+    ports:
+      - ${PORT_NODE_MAIN}:3000
+      - ${PORT_NODE_GRAPHQL}:4000
+      - ${PORT_NODE_MAIN_DEBUG}:9229
+    networks:
+      - front
     # depends_on:
       # - node-api
       # - python-api

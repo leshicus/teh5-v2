@@ -1,30 +1,45 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+const { makeExecutableSchema } = require('graphql-tools')
+const { ApolloServer } = require('apollo-server')
 const axios = require('axios')
-const app = express()
-const port = process.env.PORT_NODE_API_LOCAL
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
 
-app.get('/api/hello', async (req, res) => {
-  const resp = {
-    express: 'Hello From Express',
-  }
-  try {
-    const { data } = await axios.get('http://node-api:3000')
-    resp.website0 = data
-  } catch (e) {
-    console.log(e)
+// Construct a schema, using GraphQL schema language
+const typeDefs = `
+  type Query {
+    dogs: [Dog]
   }
 
-  try {
-    const { data } = await axios.get('http://python-api')
-    resp.product = data
-  } catch (e) {
-    console.log(e)
-  }
+	type Dog @cacheControl(maxAge: 1000) {
+		id: String!
+	}
+`
 
-  res.send(resp)
+// Provide resolver functions for your schema fields
+const resolvers = {
+  Query: {
+    dogs: async () => {
+      const dogs = [
+        {
+          id: '1',
+        },
+        {
+          id: '2',
+        },
+      ]
+      return dogs
+    },
+  },
+}
+
+// Required: Export the GraphQL.js schema object as "schema"
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
 })
 
-app.listen(port, () => console.log(`Listening on port ${port}`))
+const server = new ApolloServer({
+  schema,
+})
+
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`)
+})

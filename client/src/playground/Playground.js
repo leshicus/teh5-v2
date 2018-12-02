@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom'
 import { Home } from './Home'
 import { Jss } from './Jss'
 import { Ramda } from './Ramda'
+import { GraphQL } from './GraphQL'
 
 const styles = {
   root: {
@@ -18,11 +19,11 @@ export class Playground extends React.Component<{}> {
   componentDidCatch(error: any, info: any) {
     console.log(error, info)
   }
-  componentDidMount() {
-    fetch('api/hello').then(data => {
-      console.log(data)
-    })
-  }
+  // componentDidMount() {
+  //   fetch('api/hello').then(data => {
+  //     console.log(data)
+  //   })
+  // }
 
   render() {
     return (
@@ -44,6 +45,11 @@ export class Playground extends React.Component<{}> {
           <Route exact={true} path={'/playground'} component={Home} />
           <Route exact={true} path={'/playground/jss'} component={Jss} />
           <Route exact={true} path={'/playground/ramda'} component={Ramda} />
+          <Route
+            exact={true}
+            path={'/playground/graphql'}
+            component={GraphQL}
+          />
         </Switch>
       </div>
     )
