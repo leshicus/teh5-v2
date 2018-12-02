@@ -18,6 +18,12 @@ export class Playground extends React.Component<{}> {
   componentDidCatch(error: any, info: any) {
     console.log(error, info)
   }
+  componentDidMount() {
+    fetch('api/hello').then(data => {
+      console.log(data)
+    })
+  }
+
   render() {
     return (
       <div style={styles.root}>

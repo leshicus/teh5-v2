@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "leshicus",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.6.2"
+  },
+  "devDependencies": {}
+}
