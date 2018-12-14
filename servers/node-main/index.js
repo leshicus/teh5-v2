@@ -4,28 +4,35 @@ const axios = require('axios')
 
 // Construct a schema, using GraphQL schema language
 const typeDefs = `
-  type Query {
-    dogs: [Dog]
-  }
+  scalar JSON
 
-	type Dog @cacheControl(maxAge: 1000) {
-		id: String!
-	}
+  type Query {
+    responses: JSON
+  }
 `
 
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {
-    dogs: async () => {
-      const dogs = [
-        {
-          id: '1',
-        },
-        {
-          id: '2',
-        },
-      ]
-      return dogs
+    responses: async () => {
+      const resp = {
+        graphql_api: 'Hello From GraphQL',
+      }
+      try {
+        const { data } = await axios.get('http://node-api:3000')
+        resp.node_api = data
+      } catch (e) {
+        console.log(e)
+      }
+
+      try {
+        const { data } = await axios.get('http://python-api')
+        resp.python_api = data
+      } catch (e) {
+        console.log(e)
+      }
+
+      return resp
     },
   },
 }

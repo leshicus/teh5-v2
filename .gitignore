@@ -17,3 +17,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /.history
+
+servers/mongodb/data/db/

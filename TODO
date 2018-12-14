@@ -1,11 +1,9 @@
 
-Todo:
+Site:
   ☐ Other
     Add counter types. 
       With closure: cnt.key++
       With object property: obj.key = obj.key + 1
-  ☐ Add sub routes to topics on the page
-    For example /styleguide:wrapper
 
 Learn JS:
   ☐ Asynchronous programming. Event loop. Event handler. Single thread.
@@ -24,5 +22,9 @@ Learn JS:
     Classical inheritance (constructor functions with `new`)
   ☐ Cover questions mentioned there: http://davidshariff.com/blog/preparing-for-a-front-end-web-development-interview-in-2017/
 
-
+Infrastructure:
+  ☐ Create docker container with Mongo DB. 
+  ☐ Create migration with table User in Mongo DB
+  ☐ Create form on site to add/delete/update/list User.
+  ☐ Make graphQL transport to Mongo DB API
   
