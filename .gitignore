@@ -18,4 +18,4 @@ yarn-error.log*
 
 /.history
 
-servers/mongodb/data/db/
+servers/mongodb/

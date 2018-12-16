@@ -25,16 +25,18 @@ services:
     networks:
       - front
 
-  # mongodb:
-  #   image: 'bitnami/mongodb:latest'
-  #   ports:
-  #     - ${PORT_MONGO}:27017
-  #   volumes:
-  #     - ./servers:/bitnami
-  #   environment:
-  #     - MONGO_INITDB_DATABASE=test
-  #     - MONGO_INITDB_ROOT_USERNAME=root
-  #     - MONGO_INITDB_ROOT_PASSWORD=example
+  mongodb:
+    image: 'bitnami/mongodb:latest'
+    ports:
+      - ${PORT_MONGO}:27017
+    volumes:
+      - ./servers:/bitnami
+    environment:
+      - MONGO_INITDB_DATABASE=test
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    networks:
+      - front
 
   node-main:
     build: ./servers/node-main
