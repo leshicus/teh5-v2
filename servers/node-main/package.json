@@ -1,23 +1,13 @@
 {
-  "name": "example-create-react-app-express",
+  "name": "node-main",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
-    "client": "cd react-client && yarn start",
-    "server": "nodemon --inspect=0.0.0.0:9229 .",
+    "client": "cd client && yarn start",
+    "server": "nodemon --inspect=0.0.0.0:9229 --watch ./server ./server/index.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
   },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "apollo-server": "^2.0.0-rc.7",
-    "graphql": "^0.13.2",
-    "graphql-tools": ""
-  },
   "devDependencies": {
-    "concurrently": "^4.0.1",
-    "flow-bin": "^0.76.0"
+    "concurrently": "^4.0.1"
   }
 }

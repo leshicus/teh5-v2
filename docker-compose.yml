@@ -5,25 +5,25 @@ networks:
     driver: bridge
 
 services:
-  python-api:
-    build: ./servers/python
-    volumes:
-      - ./servers/python:/usr/src/app
-    ports:
-      - ${PORT_PYTHON_API}:80
-    networks:
-      - front
+  # python-api:
+  #   build: ./servers/python
+  #   volumes:
+  #     - ./servers/python:/usr/src/app
+  #   ports:
+  #     - ${PORT_PYTHON_API}:80
+  #   networks:
+  #     - front
 
-  node-api:
-    build: ./servers/node-api
-    command: yarn start
-    volumes:
-      - ./servers/node-api:/usr/project
-    ports:
-      - ${PORT_NODE_API}:3000
-      - ${PORT_NODE_API_DEBUG}:5858
-    networks:
-      - front
+  # node-api:
+  #   build: ./servers/node-api
+  #   command: yarn start
+  #   volumes:
+  #     - ./servers/node-api:/usr/project
+  #   ports:
+  #     - ${PORT_NODE_API}:3000
+  #     - ${PORT_NODE_API_DEBUG}:5858
+  #   networks:
+  #     - front
 
   mongodb:
     image: 'bitnami/mongodb:latest'
@@ -42,8 +42,9 @@ services:
     build: ./servers/node-main
     command: yarn run dev
     volumes:
-      - ./../../react-client:/usr/project/react-client
+      - ./react-client:/usr/project/client
       - ./servers/node-main:/usr/project
+      - ./servers/graphql:/usr/project/server
     ports:
       - ${PORT_NODE_MAIN}:3000
       - ${PORT_NODE_GRAPHQL}:4000
