@@ -1,0 +1,130 @@
+{
+  "comment": "",
+  "description": "Время Present Simple. Русские глаголы, английским эквивалентом которых являются конструкции с to be",
+  "difficulty": "«max»",
+  "type": "sd",
+  "title": {
+    "rus": "Братья Твикс",
+    "eng": "Twix brothers",
+    "start": 2790,
+    "end": 3989
+  },
+  "audio": "3.mp3",
+  "plfGroup": 1,
+  "program": 1,
+  "sentences": [
+    {
+      "eng": "Twix brothers are so different!",
+      "rus": "Братья Твикс такие [разные|разные|different]!",
+      "start": 5190,
+      "end": 7349
+    },
+    {
+      "eng": "One is seldom late for his work,",
+      "rus": "[Один|один|one] редко [опаздывает|опаздывать куда-то|to be late for something] на [работу|работа|work],",
+      "start": 8100,
+      "end": 10600
+    },
+    {
+      "eng": "the other is rarely late for his duty.",
+      "rus": "[другой|другой|the other] нечасто [опаздывает|опаздывать куда-то|to be late for something] на [службу|служба|duty, job].",
+      "start": 11020,
+      "end": 13969
+    },
+    {
+      "eng": "One is afraid of mice,",
+      "rus": "[Один|один|one] [боится|бояться чего-то|to be afraid of something] [мышей|мыши|mice],",
+      "start": 14800,
+      "end": 16700
+    },
+    {
+      "eng": "the other is scared of rats.",
+      "rus": "[другой|другой|the other] [страшится|страшиться чего-то|to be scared of something] [крыс|крысы|rats].",
+      "start": 17050,
+      "end": 19100
+    },
+    {
+      "eng": "One is crazy about candies,",
+      "rus": "[Один|один|one] [обожает|обожать что-то|to be crazy about something] [леденцы|леденцы|candies],",
+      "start": 20110,
+      "end": 22700
+    },
+    {
+      "eng": "the other is fond of sweets.",
+      "rus": "[другой|другой|the other] [любит|любить что-то|to be fond of something] [конфеты|конфеты|sweets].",
+      "start": 23020,
+      "end": 25009
+    },
+    {
+      "eng": "One is interested in films,",
+      "rus": "[Один|один|one] [интересуется|интересоваться чем-то|to be interested in something] [фильмами|фильмы|films],",
+      "start": 25740,
+      "end": 27890
+    },
+    {
+      "eng": "the other is keen on movies.",
+      "rus": "[другой|другой|the other] увлекается [кино|кино|movies].",
+      "start": 28560,
+      "end": 30789
+    },
+    {
+      "eng": "One feels sorry for the poor,",
+      "rus": "[Один|один|one] [сочувствует|сочувствовать кому-то|to feel sorry for somebody/to be sorry for somebody] [бедным людям|бедные люди|the poor],",
+      "start": 31840,
+      "end": 34100
+    },
+    {
+      "eng": "the other feels sorry for the homeless.",
+      "rus": "[другой|другой|the other] сопереживает [бездомным людям|бездомные люди|the homeless].",
+      "start": 34730,
+      "end": 37000
+    },
+    {
+      "eng": "The first one is angry with the ignorance,",
+      "rus": "[Первый|первый|the first one] [злится|злиться, сердиться на что-то|to be angry with something] на [невежество|невежество|the ignorance],",
+      "start": 38030,
+      "end": 41100
+    },
+    {
+      "eng": "the second one is angry with illiteracy.",
+      "rus": "[второй|второй|the second one] [сердится|злиться, сердиться на что-то|to be angry with something] на [безграмотность|безграмотность|illiteracy].",
+      "start": 41610,
+      "end": 44800
+    },
+    {
+      "eng": "The first one is very tired at work,",
+      "rus": "[Первый|первый|the first one] сильно [устает|уставать|to be tired] на [работе|работа|work],",
+      "start": 45650,
+      "end": 48560
+    },
+    {
+      "eng": "the second one is just exhausted at work.",
+      "rus": "[второй|второй|the second one] просто [изматывается|изматываться|to be exhausted, to be worn out] на [работе|работа|work].",
+      "start": 49230,
+      "end": 52769
+    },
+    {
+      "eng": "The first one is proud of his gifts,",
+      "rus": "[Первый|первый|the first one] [гордится|гордиться|to be proud of] своими [дарованиями|дар, дарования|gifts],",
+      "start": 53770,
+      "end": 56500
+    },
+    {
+      "eng": "the second one is proud of his talents.",
+      "rus": "а [второй|второй|the second one] [гордится|гордиться|to be proud of] своими [талантами|таланты|talents].",
+      "start": 57160,
+      "end": 59990
+    },
+    {
+      "eng": "But both of them are proud of their uniqueness!",
+      "rus": "И оба они [гордятся|гордиться|to be proud of] своей [исключительностью|исключительность|uniqueness]!",
+      "start": 60640,
+      "end": 63850
+    }
+  ],
+  "image": "//classroom.kespa.ru/cdn/images/1x/texts/3.jpg",
+  "image2x": "//classroom.kespa.ru/cdn/images/2x/texts/3.jpg",
+  "audioPath": "//classroom.kespa.ru/cdn/audio/texts/3.mp3",
+  "cdnPath": "//classroom.kespa.ru/cdn/audio/texts/",
+  "id": 3
+}

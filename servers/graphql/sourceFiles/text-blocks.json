@@ -1,0 +1,418 @@
+[
+  { 
+    "description": "Три времени в активном залоге: Present Simple, Past Simple, Future Simple; конструкции с to be; модальный глагол can",
+    "lessons": [
+      {
+        "description": "Употребление конструкций с to be",
+        "texts": [
+          { "title": { "rus": "Ты и я" }, "id": 2 },
+          { "title": { "rus": "Братья Твикс" }, "id": 3 },
+          {
+            "title": { "rus": "В меру упитанный мужчина в самом расцвете сил" },
+            "id": 4
+          },
+          { "title": { "rus": "Шерлок Холмс" }, "id": 5 }
+        ],
+        "id": 1
+      },
+      {
+        "description": "Время Present Simple. Глаголы действия. Конструкции с to be",
+        "texts": [
+          { "title": { "rus": "Очень серьезный человек" }, "id": 6 },
+          { "title": { "rus": "Моя семья" }, "id": 11 },
+          { "title": { "rus": "Болтливый хвастун" }, "id": 7 },
+          { "title": { "rus": "Потрясающий Вася" }, "id": 8 },
+          { "title": { "rus": "Доктор Хаус и Мэри" }, "id": 10 },
+          { "title": { "rus": "Муж и я" }, "id": 9 }
+        ],
+        "id": 2
+      },
+      {
+        "description": "Время Present Simple. Конструкции с to be. Модальный глагол can",
+        "texts": [
+          { "title": { "rus": "Живая беседа" }, "id": 13 },
+          { "title": { "rus": "Я и саксофон" }, "id": 12 }
+        ],
+        "id": 3
+      },
+      {
+        "description": "Время Future Simple, конструкции с to be в Future Simple",
+        "texts": [
+          { "title": { "rus": "Человек, которого я полюблю" }, "id": 14 },
+          { "title": { "rus": "Вечеринка" }, "id": 15 }
+        ],
+        "id": 4
+      },
+      {
+        "description": "Времена Present Simple, Future Simple. Конструкции to be, модальный глагол can. Специальные вопросы",
+        "texts": [
+          { "title": { "rus": "Незадачливый путешественник" }, "id": 17 },
+          { "title": { "rus": "Что ты будешь делать?" }, "id": 16 }
+        ],
+        "id": 5
+      },
+      {
+        "description": "Время Past Simple, конструкции с to be в Past Simple",
+        "texts": [
+          { "title": { "rus": "Жизнь в Эдинбурге" }, "id": 18 },
+          { "title": { "rus": "Трус" }, "id": 19 }
+        ],
+        "id": 6
+      },
+      {
+        "description": "Времена Present Simple, Past Simple. Конструкции с to be",
+        "texts": [ { "title": { "rus": "В поход!" }, "id": 20 } ],
+        "id": 7
+      },
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple. Конструкции с to be в трех временах",
+        "texts": [
+          { "title": { "rus": "Канун Рождества" }, "id": 21 },
+          { "title": { "rus": "Черепашка из детства" }, "id": 23 },
+          { "title": { "rus": "Люди будущего" }, "id": 24 },
+          { "title": { "rus": "В детстве" }, "id": 22 },
+          { "title": { "rus": "У меня есть все, что нужно" }, "id": 26 },
+          { "title": { "rus": "Вечное сияние чистого разума" }, "id": 25 }
+        ],
+        "id": 8
+      }
+    ],
+    "id": 1
+  },
+  {
+    "description": "Шесть грамматических времен: Present Simple, Past Simple, Future Simple, Present Progressive, Past Progressive, Future Progressive",
+    "lessons": [
+      {
+        "description": "Времена Present Simple, Present Progressive. Конструкции с to be",
+        "texts": [
+          { "title": { "rus": "Монолог мизантропа" }, "id": 30 },
+          { "title": { "rus": "Когда ты влюблен" }, "id": 27 },
+          { "title": { "rus": "Гордость и предубеждение" }, "id": 29 },
+          { "title": { "rus": "Моя девушка" }, "id": 28 },
+          { "title": { "rus": "Ворон" }, "id": 31 }
+        ],
+        "id": 9
+      },
+      {
+        "description": "Времена Future Simple, Future Progressive",
+        "texts": [
+          { "title": { "rus": "Просто спросил" }, "id": 33 },
+          { "title": { "rus": "Спящая царевна" }, "id": 32 }
+        ],
+        "id": 10
+      },
+      {
+        "description": "Времена Present Simple, Future Simple, Present Progressive, Future Progressive",
+        "texts": [
+          { "title": { "rus": "Ночной разговор" }, "id": 35 },
+          { "title": { "rus": "Завтра мне будет 20!" }, "id": 34 }
+        ],
+        "id": 11
+      },
+      {
+        "description": "Времена Past Simple, Past Progressive",
+        "texts": [
+          { "title": { "rus": "Уроки танго" }, "id": 36 },
+          { "title": { "rus": "Допрос" }, "id": 37 }
+        ],
+        "id": 12
+      },
+      {
+        "description": "Времена Present Simple, Past Simple. Present Progressive, Past Progressive",
+        "texts": [
+          { "title": { "rus": "После экзамена" }, "id": 38 },
+          { "title": { "rus": "Мямля, соберись!" }, "id": 39 }
+        ],
+        "id": 13
+      },
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple. Present Progressive, Past Progressive, Future Progressive. Конструкция used to do smth.",
+        "texts": [
+          { "title": { "rus": "Плохая погода" }, "id": 41 },
+          { "title": { "rus": "Кот Матроскин" }, "id": 40 },
+          { "title": { "rus": "Коллекционирование" }, "id": 43 },
+          { "title": { "rus": "Крис не любит путешествовать" }, "id": 42 },
+          { "title": { "rus": "Разные люди" }, "id": 45 },
+          { "title": { "rus": "Зима" }, "id": 44 }
+        ],
+        "id": 14
+      }
+    ],
+    "id": 2
+  },
+  {
+    "description": "Три времени в активном залоге: Present Simple, Past Simple, Future Simple; три времени в пассивном залоге: Present Simple Passive voice, Past Simple Passive voice, Future Simple Passive voice",
+    "lessons": [
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple Active and Passive",
+        "texts": [
+          { "title": { "rus": "Депрессия в разгаре" }, "id": 47 },
+          { "title": { "rus": "Безработный актер" }, "id": 46 }
+        ],
+        "id": 15
+      }
+    ],
+    "id": 3
+  },
+  {
+    "description": "Семь времен в активном залоге: Present Simple, Past Simple, Future Simple, Present Progressive, Past Progressive, Future Progressive, Present Perfect Progressive",
+    "lessons": [
+      {
+        "description": "Present Simple, Present Progressive, Present Perfect Progressive",
+        "texts": [
+          { "title": { "rus": "Лоботряс" }, "id": 53 },
+          { "title": { "rus": "Я наблюдаю" }, "id": 51 },
+          { "title": { "rus": "15 лет тяжелой работы" }, "id": 52 },
+          { "title": { "rus": "Обознался" }, "id": 48 },
+          { "title": { "rus": "Андрей, собака и я" }, "id": 50 },
+          { "title": { "rus": "Лучший соискатель" }, "id": 49 }
+        ],
+        "id": 16
+      },
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple, Present Progressive, Present Perfect Progressive",
+        "texts": [
+          { "title": { "rus": "Приводим бизнес в порядок" }, "id": 55 },
+          { "title": { "rus": "Дождь" }, "id": 54 }
+        ],
+        "id": 17
+      },
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple, Present Progressive, Past Progressive, Future Progressive, Present Perfect Progressive, Past Perfect Progressive, Future Perfect Progressive.",
+        "texts": [
+          { "title": { "rus": "Горнолыжные каникулы" }, "id": 56 },
+          { "title": { "rus": "Снег идет" }, "id": 58 },
+          { "title": { "rus": "Как я ехала в метро" }, "id": 57 }
+        ],
+        "id": 18
+      }
+    ],
+    "id": 4
+  },
+  {
+    "description": "Девять грамматических времен: Present Simple, Past Simple, Future Simple, Present Progressive, Past Progressive, Future Progressive, Present Perfect, Past Perfect, Present Perfect Progressive",
+    "lessons": [
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple, Present Perfect",
+        "texts": [
+          { "title": { "rus": "Китай" }, "id": 60 },
+          { "title": { "rus": "Письмо из Венеции" }, "id": 59 }
+        ],
+        "id": 19
+      },
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple, Present Progressive, Past Progressive, Future Progressive, Present Perfect Progressive, Present Perfect",
+        "texts": [
+          { "title": { "rus": "На гастролях в Лондоне" }, "id": 61 },
+          { "title": { "rus": "Телефонный разговор" }, "id": 62 }
+        ],
+        "id": 20
+      },
+      {
+        "description": "Времена Present Simple, Past Simple, Future Simple, Past Perfect",
+        "texts": [
+          { "title": { "rus": "Ресторан" }, "id": 63 },
+          { "title": { "rus": "Как я провел лето" }, "id": 64 }
+        ],
+        "id": 21
+      }
+    ],
+    "id": 5
+  },
+  {
+    "description": "Тексты со смешанной грамматикой",
+    "lessons": [
+      {
+        "description": "Тексты со смешанной грамматикой для речевых минималистов",
+        "texts": [
+          { "title": { "rus": "Я могу все!" }, "id": 97 },
+          { "title": { "rus": "Ужасный день!" }, "id": 104 },
+          {
+            "title": { "rus": "Как выражать свои мысли по-английски" },
+            "id": 105
+          },
+          { "title": { "rus": "Карелия" }, "id": 98 },
+          { "title": { "rus": "Мистер Домосед" }, "id": 107 },
+          { "title": { "rus": "Визит к стоматологу" }, "id": 103 },
+          { "title": { "rus": "Как меня выручил мой бывший муж" }, "id": 109 },
+          { "title": { "rus": "Велосипедист" }, "id": 101 },
+          { "title": { "rus": "Учите английский в пробках!" }, "id": 99 },
+          { "title": { "rus": "Не хочу зависеть от переводчиков" }, "id": 96 },
+          { "title": { "rus": "Не отвлекайте мистера Брауна!" }, "id": 110 },
+          { "title": { "rus": "Самый большой лентяй в мире" }, "id": 108 },
+          { "title": { "rus": "Разговорчивая дама" }, "id": 106 },
+          { "title": { "rus": "Семейный скандал" }, "id": 102 },
+          { "title": { "rus": "Давайте познакомимся поближе" }, "id": 100 }
+        ],
+        "id": 39
+      },
+      {
+        "description": "Тексты со смешанной грамматикой для речевых максималистов",
+        "texts": [
+          { "title": { "rus": "Во что я верю" }, "id": 111 },
+          { "title": { "rus": "Не все так просто" }, "id": 117 },
+          { "title": { "rus": "Уборка" }, "id": 115 },
+          { "title": { "rus": "Неудачный новый год" }, "id": 112 },
+          { "title": { "rus": "Придирчивый менеджер" }, "id": 113 },
+          {
+            "title": {
+              "rus": "Дождь, зажигалка и чувство собственного достоинства"
+            },
+            "id": 114
+          },
+          { "title": { "rus": "Шахматист" }, "id": 119 },
+          {
+            "title": {
+              "rus": "Обыкновенный офисный работник и его три необыкновенных брата"
+            },
+            "id": 116
+          },
+          { "title": { "rus": "Если я заболею корью" }, "id": 120 },
+          { "title": { "rus": "Политика" }, "id": 124 },
+          { "title": { "rus": "Волшебный сон" }, "id": 118 },
+          { "title": { "rus": "Письмо Пете" }, "id": 122 },
+          { "title": { "rus": "Эмигрант" }, "id": 123 },
+          { "title": { "rus": "Мой брат" }, "id": 121 }
+        ],
+        "id": 40
+      }
+    ],
+    "id": 7
+  },
+  {
+    "description": "Грамматические темы, вызывающие наибольшие затруднения",
+    "lessons": [
+      {
+        "description": "Повелительное наклонение",
+        "texts": [ { "title": { "rus": "Рекламируй!" }, "id": 65 } ],
+        "id": 22
+      },
+      {
+        "description": "Специальные вопросы",
+        "texts": [
+          { "title": { "rus": "Интервью" }, "id": 69 },
+          { "title": { "rus": "Женишок" }, "id": 67 },
+          { "title": { "rus": "Амнезия" }, "id": 66 },
+          { "title": { "rus": "Назойливый педант" }, "id": 68 }
+        ],
+        "id": 23
+      },
+      {
+        "description": "Имя существительное. Притяжательный падеж существительных. Артикли. Местоимения.",
+        "texts": [
+          { "title": { "rus": "Сборы на дачу" }, "id": 71 },
+          { "title": { "rus": "Учитель английского" }, "id": 70 },
+          { "title": { "rus": "Плюшкин" }, "id": 72 }
+        ],
+        "id": 24
+      },
+      {
+        "description": "Конструкция there is / there are",
+        "texts": [
+          { "title": { "rus": "Мой рабочий стол" }, "id": 73 },
+          { "title": { "rus": "Выпьем кофе?" }, "id": 74 }
+        ],
+        "id": 25
+      },
+      {
+        "description": "Употребление наречий много / мало",
+        "texts": [ { "title": { "rus": "Важная сотрудница" }, "id": 75 } ],
+        "id": 26
+      },
+      {
+        "description": "Complex Object",
+        "texts": [
+          { "title": { "rus": "Непослушные мальчишки" }, "id": 77 },
+          { "title": { "rus": "Монолог мамы" }, "id": 76 }
+        ],
+        "id": 27
+      },
+      {
+        "description": "Complex Subject",
+        "texts": [
+          { "title": { "rus": "Давайте не будем снобами!" }, "id": 78 }
+        ],
+        "id": 28
+      },
+      {
+        "description": "Косвенная речь",
+        "texts": [
+          { "title": { "rus": "Когда рак на горе свистнет" }, "id": 81 },
+          { "title": { "rus": "Та самая книжка" }, "id": 80 },
+          { "title": { "rus": "Как быть мамой" }, "id": 79 }
+        ],
+        "id": 29
+      },
+      {
+        "description": "Модальные глаголы",
+        "texts": [ { "title": { "rus": "Невеста" }, "id": 82 } ],
+        "id": 30
+      },
+      {
+        "description": "Герундий в роли существительного",
+        "texts": [
+          { "title": { "rus": "Ненавижу воспитывать детей!" }, "id": 83 },
+          {
+            "title": { "rus": "Самоотверженные борцы за здоровый образ жизни" },
+            "id": 84
+          }
+        ],
+        "id": 31
+      },
+      {
+        "description": "Герундий для обозначения способа действия, в роли определения, после некоторых глаголов и конструкций с to be",
+        "texts": [
+          { "title": { "rus": "Работяги" }, "id": 85 },
+          { "title": { "rus": "Сегодня с нами в студии …!" }, "id": 86 }
+        ],
+        "id": 32
+      },
+      {
+        "description": "Герундий как эквивалент русских деепричастий",
+        "texts": [ { "title": { "rus": "Забавные плакаты" }, "id": 87 } ],
+        "id": 33
+      },
+      {
+        "description": "Придаточные условия и времени",
+        "texts": [ { "title": { "rus": "Поговори со мной!" }, "id": 88 } ],
+        "id": 34
+      },
+      {
+        "description": "Сослагательное наклонение",
+        "texts": [
+          { "title": { "rus": "В автобусе в час пик" }, "id": 90 },
+          { "title": { "rus": "Люди и современный мир" }, "id": 91 },
+          {
+            "title": { "rus": "Если бы у меня было пять миллионов …" },
+            "id": 89
+          }
+        ],
+        "id": 35
+      },
+      {
+        "description": "Использование модального глагола should в придаточных дополнительных после выражений it’s necessary / important / vital / dangerous / common / difficult ect.",
+        "texts": [ { "title": { "rus": "Это необходимо" }, "id": 92 } ],
+        "id": 36
+      },
+      {
+        "description": "Разница в употреблении глаголов to speak / to talk / to say / to tell",
+        "texts": [ { "title": { "rus": "Учимся говорить" }, "id": 93 } ],
+        "id": 37
+      },
+      {
+        "description": "Выражения, имитирующие процесс говорения. Они помогают избежать неловких пауз в разговоре, позволяют говорящему собраться с мыслями для подбора нужных слов и грамматических конструкций.",
+        "texts": [
+          {
+            "title": {
+              "rus": "Знаете, я еще не очень хорошо говорю по-английски"
+            },
+            "id": 94
+          },
+          { "title": { "rus": "Такие вот дискуссии на работе" }, "id": 95 }
+        ],
+        "id": 38
+      }
+    ],
+    "id": 6
+  }
+]

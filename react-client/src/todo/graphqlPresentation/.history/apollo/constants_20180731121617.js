@@ -1,0 +1,4 @@
+module.exports = {
+  SCORE_CHANGED: "SCORE_CHANGED",
+  MARKET_CHANGED: "MARKET_CHANGED"
+};

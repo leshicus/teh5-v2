@@ -1,0 +1,522 @@
+[
+  {
+    "_id": 1,
+    "eng": "I am Vasya and I am hungry.",
+    "rus": "Я Вася и я [голоден|голодный(ая), голоден(голодна)|hungry].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "1.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 1, 5 ],
+    "speechDrillings": [
+      { "order": 1, "id": 1, "_id": "5aaaa1176a18a033c6ce9b7a" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1
+  },
+  {
+    "_id": 2,
+    "eng": "I am good. I am friendly. And I am single.",
+    "rus": "Я [хороший|хороший(ая)|good]. Я [доброжелательный|доброжелательный(ая)|friendly]. И я [холостой|холостой, не замужем|single].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "2.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 3 ],
+    "speechDrillings": [
+      { "order": 2, "id": 1, "_id": "5aaaa1176a18a033c6ce9b7b" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 2
+  },
+  {
+    "_id": 3,
+    "eng": "I am Natasha. I am married and I am a housekeeper.",
+    "rus": "Я Наташа, я [замужем|женатый, женат, замужем|married], и я [домохозяйка|домохозяйка, домработница|a housekeeper].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "3_v2.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 1, 2, 5 ],
+    "speechDrillings": [
+      { "order": 3, "id": 1, "_id": "5aaaa1176a18a033c6ce9b7c" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/3_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 3
+  },
+  {
+    "_id": 4,
+    "eng": "I am Fabio and I am a coach.",
+    "rus": "Я Фабио, и я [тренер|тренер|a coach].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "4.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 1, 2 ],
+    "speechDrillings": [
+      { "order": 4, "id": 1, "_id": "5aaaa1176a18a033c6ce9b7d" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/4.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 4
+  },
+  {
+    "_id": 5,
+    "eng": "I am a student. I am clever. I am beautiful. And I am single.",
+    "rus": "Я [студентка|студент(ка)|a student]. Я [умная|умный(ая)|clever]. Я [красивая|красивый(ая)|beautiful; handsome (о мужчине)]. И я [не замужем|холостой, не замужем|single].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "5_v2.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 2, 3, 5 ],
+    "speechDrillings": [
+      { "order": 5, "id": 1, "_id": "5aaaa1176a18a033c6ce9b7e" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/5_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 5
+  },
+  {
+    "_id": 6,
+    "eng": "I am drunk, I am at home and I am happy.",
+    "rus": "Я [пьяный|пьян(а)|drunk], я [дома|дома|at home] и я [счастлив|счастлив(а)|happy].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "6.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 3, 4, 5 ],
+    "speechDrillings": [
+      { "order": 6, "id": 1, "_id": "5aaaa1176a18a033c6ce9b7f" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/6.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 6
+  },
+  {
+    "_id": 7,
+    "eng": "I am good, I am kind and I am married.",
+    "rus": "Я [хорошая|хороший(ая)|good], я [добрая|добрый(ая)|kind], и я [замужем|женатый, женат, замужем|married].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "7_v2.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 3, 5 ],
+    "speechDrillings": [
+      { "order": 7, "id": 1, "_id": "5aaaa1176a18a033c6ce9b80" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/7_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 7
+  },
+  {
+    "_id": 8,
+    "eng": "I am here, I am at work.",
+    "rus": "Я [здесь|здесь|here], [на работе|на работе|at work].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "8_v2.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 4 ],
+    "speechDrillings": [
+      { "order": 8, "id": 1, "_id": "5aaaa1176a18a033c6ce9b81" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/8_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 8
+  },
+  {
+    "_id": 9,
+    "eng": "I am Figaro. I am here and I am there.",
+    "rus": "Я Фигаро. Я [здесь|здесь|here] и я [там|там|there].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "9.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 1, 4 ],
+    "speechDrillings": [
+      { "order": 9, "id": 1, "_id": "5aaaa1176a18a033c6ce9b82" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/9.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 9
+  },
+  {
+    "_id": 10,
+    "eng": "I am rich and strong! I am a sportsman.",
+    "rus": "Я [богат|богатый(ая), богат|rich] и [силен|сильный(ая)|strong]! Я [спортсмен|спортсмен|a sportsman].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "10.mp3",
+    "lesson": 1,
+    "primary": true,
+    "plfs": [ 2, 3, 5 ],
+    "speechDrillings": [
+      { "order": 10, "id": 1, "_id": "5aaaa1176a18a033c6ce9b83" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/10.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 10
+  },
+  {
+    "_id": 11,
+    "eng": "I am a sportsman and I am strong.",
+    "rus": "Я [спортсмен|спортсмен|a sportsman] и я [сильный|сильный(ая)|strong].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "11.mp3",
+    "lesson": 1,
+    "plfs": [ 2, 3 ],
+    "speechDrillings": [
+      { "order": 11, "id": 1, "_id": "5aaaa1176a18a033c6ce9b84" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/11.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 11
+  },
+  {
+    "_id": 12,
+    "eng": "I am Masha. I am friendly and beautiful.",
+    "rus": "Я Маша. Я [доброжелательная|доброжелательный(ая)|friendly] и [красивая|красивый(ая)|beautiful; handsome (о мужчине)].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "12_v2.mp3",
+    "lesson": 1,
+    "plfs": [ 1, 3 ],
+    "speechDrillings": [
+      { "order": 12, "id": 1, "_id": "5aaaa1176a18a033c6ce9b85" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/12_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 12
+  },
+  {
+    "_id": 13,
+    "eng": "I am Ann. I am kind and strong.",
+    "rus": "Я Аня. Я [добрая|добрый(ая)|kind] и [сильная|сильный(ая)|strong].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "13_v2.mp3",
+    "lesson": 1,
+    "plfs": [ 1, 3 ],
+    "speechDrillings": [
+      { "order": 13, "id": 1, "_id": "5aaaa1176a18a033c6ce9b86" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/13_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 13
+  },
+  {
+    "_id": 14,
+    "eng": "I am at home, I am a housewife.",
+    "rus": "Я [дома|дома|at home], я [домохозяйка|домохозяйка|a housewife].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "14_v3.mp3",
+    "lesson": 1,
+    "plfs": [ 2, 4 ],
+    "speechDrillings": [
+      { "order": 14, "id": 1, "_id": "5aaaa1176a18a033c6ce9b87" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/14_v3.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 14
+  },
+  {
+    "_id": 20,
+    "eng": "I am at home.",
+    "rus": "Я [дома|дома|at home].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "20_v2.mp3",
+    "lesson": 1,
+    "plfs": [ 4 ],
+    "speechDrillings": [
+      { "order": 20, "id": 1, "_id": "5aaaa1176a18a033c6ce9b88" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/20_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 20
+  },
+  {
+    "_id": 15,
+    "eng": "I am married.",
+    "rus": "Я [женат|женатый, женат, замужем|married].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "15.mp3",
+    "lesson": 1,
+    "plfs": [ 5 ],
+    "speechDrillings": [
+      { "order": 15, "id": 1, "_id": "5aaaa1176a18a033c6ce9b89" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/15.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 15
+  },
+  {
+    "_id": 16,
+    "eng": "I am married.",
+    "rus": "Я [замужем|женатый, женат, замужем|married].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "16_v2.mp3",
+    "lesson": 1,
+    "plfs": [ 5 ],
+    "speechDrillings": [
+      { "order": 16, "id": 1, "_id": "5aaaa1176a18a033c6ce9b8a" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/16_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 16
+  },
+  {
+    "_id": 17,
+    "eng": "I am here and I am busy.",
+    "rus": "Я [здесь|здесь|here] и я [занят|занятый(ая), занят(а)|busy].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "17.mp3",
+    "lesson": 1,
+    "plfs": [ 4, 5 ],
+    "speechDrillings": [
+      { "order": 17, "id": 1, "_id": "5aaaa1176a18a033c6ce9b8b" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/17.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 17
+  },
+  {
+    "_id": 18,
+    "eng": "I am at work and I am busy.",
+    "rus": "Я [на работе|на работе|at work] и я [занят|занятый(ая), занят(а)|busy].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "18.mp3",
+    "lesson": 1,
+    "plfs": [ 4, 5 ],
+    "speechDrillings": [
+      { "order": 18, "id": 1, "_id": "5aaaa1176a18a033c6ce9b8c" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/18.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 18
+  },
+  {
+    "_id": 19,
+    "eng": "I am single.",
+    "rus": "Я [не замужем|холостой, не замужем|single].",
+    "gender": "A",
+    "voicedBy": "F",
+    "__v": 0,
+    "audio": "19_v2.mp3",
+    "lesson": 1,
+    "plfs": [ 5 ],
+    "speechDrillings": [
+      { "order": 19, "id": 1, "_id": "5aaaa1176a18a033c6ce9b8d" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/19_v2.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 19
+  },
+  {
+    "_id": 21,
+    "eng": "I am Joker and I am bad.",
+    "rus": "Я Джокер и я [плохой|плохой, испорченный|bad].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "21.mp3",
+    "lesson": 1,
+    "plfs": [ 1, 3 ],
+    "speechDrillings": [
+      { "order": 21, "id": 1, "_id": "5aaaa1176a18a033c6ce9b8e" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/21.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 21
+  },
+  {
+    "_id": 22,
+    "eng": "I am at work and I am hungry.",
+    "rus": "Я [на работе|на работе|at work] и я [голоден|голодный(ая), голоден(голодна)|hungry].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "22.mp3",
+    "lesson": 1,
+    "plfs": [ 4, 3 ],
+    "speechDrillings": [
+      { "order": 22, "id": 1, "_id": "5aaaa1176a18a033c6ce9b8f" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/22.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 22
+  },
+  {
+    "_id": 23,
+    "eng": "I am Vasya. I am a programmer.",
+    "rus": "Я Вася. Я [программист|программист|a programmer].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "23.mp3",
+    "lesson": 1,
+    "plfs": [ 1, 2 ],
+    "speechDrillings": [
+      { "order": 23, "id": 1, "_id": "5aaaa1176a18a033c6ce9b90" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/23.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 23
+  },
+  {
+    "_id": 24,
+    "eng": "I am at work and I am a workaholic.",
+    "rus": "Я [на работе|на работе|at work] и я [трудоголик|трудоголик|a workaholic].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "24.mp3",
+    "lesson": 1,
+    "plfs": [ 4, 2 ],
+    "speechDrillings": [
+      { "order": 24, "id": 1, "_id": "5aaaa1176a18a033c6ce9b91" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/24.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 24
+  },
+  {
+    "_id": 25,
+    "eng": "I am sociable. I am kind. I am generous. And I am single.",
+    "rus": "Я [общительный|общительный(ая)|sociable]. Я [добрый|добрый(ая)|kind]. Я [щедрый|щедрый(ая)|generous]. И я [холост|холостой, не замужем|single].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "25.mp3",
+    "lesson": 1,
+    "plfs": [ 3, 5 ],
+    "speechDrillings": [
+      { "order": 25, "id": 1, "_id": "5aaaa1176a18a033c6ce9b92" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/25.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 25
+  },
+  {
+    "_id": 26,
+    "eng": "I am at home. I am relaxed.",
+    "rus": "Я [дома|дома|at home]. Я [расслаблен|расслаблен(а)|relaxed].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "26.mp3",
+    "lesson": 1,
+    "plfs": [ 4, 3 ],
+    "speechDrillings": [
+      { "order": 26, "id": 1, "_id": "5aaaa1176a18a033c6ce9b93" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/26.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 26
+  },
+  {
+    "_id": 27,
+    "eng": "I am well-off and I am generous.",
+    "rus": "Я [обеспеченный|хорошо обеспечен(а)|well-off] и я [щедрый|щедрый(ая)|generous].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "27.mp3",
+    "lesson": 1,
+    "plfs": [ 3 ],
+    "speechDrillings": [
+      { "order": 27, "id": 1, "_id": "5aaaa1176a18a033c6ce9b94" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/27.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 27
+  },
+  {
+    "_id": 28,
+    "eng": "I am busy. I am concentrated. I am at work.",
+    "rus": "Я [занят|занятый(ая), занят(а)|busy]. Я [сосредоточен|сосредоточен(а)|concentrated]. Я [на работе|на работе|at work].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "28.mp3",
+    "lesson": 1,
+    "plfs": [ 5, 3, 4 ],
+    "speechDrillings": [
+      { "order": 28, "id": 1, "_id": "5aaaa1176a18a033c6ce9b95" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/28.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 28
+  },
+  {
+    "_id": 29,
+    "eng": "I am at home. I am drunk and relaxed. I am happy.",
+    "rus": "Я [дома|дома|at home]. Я [пьян|пьян(а)|drunk] и [расслаблен|расслаблен(а)|relaxed]. Я [счастлив|счастлив(а)|happy].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "29.mp3",
+    "lesson": 1,
+    "plfs": [ 4, 3 ],
+    "speechDrillings": [
+      { "order": 29, "id": 1, "_id": "5aaaa1176a18a033c6ce9b96" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/29.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 29
+  },
+  {
+    "_id": 30,
+    "eng": "I am kind. I am good. I am well-off. I am a boaster.",
+    "rus": "Я [добрый|добрый(ая)|kind]. Я [хороший|хороший(ая)|good]. Я [обеспечен|хорошо обеспечен(а)|well-off]. Я [хвастун|хвастун|a boaster].",
+    "gender": "A",
+    "voicedBy": "M",
+    "__v": 0,
+    "audio": "30.mp3",
+    "lesson": 1,
+    "plfs": [ 3, 5, 2 ],
+    "speechDrillings": [
+      { "order": 30, "id": 1, "_id": "5aaaa1176a18a033c6ce9b97" }
+    ],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/30.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 30
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "_id": 1523,
+    "gender": "A",
+    "primary": false,
+    "rus": "Мой [сын|сын|a son] закончил школу в этом [году|год|year], а твой закончил школу в [прошлом|прошлый, последний|last] [году|год|year].",
+    "eng": "My son has finished school this year, and your son finished school last year.",
+    "voicedBy": "F",
+    "lesson": 61,
+    "audio": "1523.mp3",
+    "speechDrillings": [
+      { "order": 1, "id": 61, "_id": "5a64f75be004723135e9cc0b" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1523.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1523
+  },
+  {
+    "_id": 1524,
+    "gender": "A",
+    "primary": false,
+    "rus": "Это самая потрясающая [вечеринка|вечеринка|a party], на которой я когда-нибудь была.",
+    "eng": "This is the greatest party I’ve ever been to.",
+    "voicedBy": "F",
+    "lesson": 61,
+    "audio": "1524.mp3",
+    "speechDrillings": [
+      { "order": 2, "id": 61, "_id": "5a64f75be004723135e9cc0c" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1524.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1524
+  },
+  {
+    "_id": 1525,
+    "gender": "A",
+    "primary": false,
+    "rus": "На этой [неделе|неделя|a week] я опоздала на работу 3 раза, а на [прошлой|прошлый, последний|last] – 2.",
+    "eng": "This week I’ve been late for work 3 times, and last week I was late for work 2 times.",
+    "voicedBy": "F",
+    "lesson": 61,
+    "audio": "1525.mp3",
+    "speechDrillings": [
+      { "order": 3, "id": 61, "_id": "5a64f75be004723135e9cc0d" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1525.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1525
+  },
+  {
+    "_id": 1526,
+    "gender": "A",
+    "primary": false,
+    "rus": "Это самая [интересная|интересный(ая)|interesting] книжка, которую я читала в своей жизни.",
+    "eng": "This is the most interesting book I’ve read in my life.",
+    "voicedBy": "F",
+    "lesson": 61,
+    "audio": "1526.mp3",
+    "speechDrillings": [
+      { "order": 4, "id": 61, "_id": "5a64f75be004723135e9cc0e" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1526.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1526
+  },
+  {
+    "_id": 1527,
+    "gender": "A",
+    "primary": false,
+    "rus": "Я совершил немало ошибок в своей жизни.",
+    "eng": "I have made many mistakes in my life.",
+    "voicedBy": "M",
+    "lesson": 61,
+    "audio": "1527.mp3",
+    "speechDrillings": [
+      { "order": 6, "id": 61, "_id": "5a64f75be004723135e9cc10" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1527.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1527
+  },
+  {
+    "_id": 1528,
+    "gender": "A",
+    "primary": false,
+    "rus": "В этом месяце мы заработали 300 000 [рублей|рубль|a ruble], а в [прошлом|прошлый, последний|last] [всего|всего, только|only] 200 000.",
+    "eng": "This month we have earned 300 thousand rubles, and last month we earned only 200 thousand rubles.",
+    "voicedBy": "M",
+    "lesson": 61,
+    "audio": "1528.mp3",
+    "speechDrillings": [
+      { "order": 7, "id": 61, "_id": "5a64f75be004723135e9cc11" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1528.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1528
+  },
+  {
+    "_id": 1529,
+    "gender": "A",
+    "primary": false,
+    "rus": "Это самый запутанный детектив, который я когда-либо смотрел.",
+    "eng": "This is the most complicated detective film I’ve ever seen.",
+    "voicedBy": "M",
+    "lesson": 61,
+    "audio": "1529.mp3",
+    "speechDrillings": [
+      { "order": 8, "id": 61, "_id": "5a64f75be004723135e9cc12" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1529.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1529
+  },
+  {
+    "_id": 1530,
+    "gender": "A",
+    "primary": false,
+    "rus": "Она самая [привлекательная|привлекательная|attractive] [женщина|женщина|a woman], которую я встречал в своей жизни.",
+    "eng": "She is the most attractive woman I’ve ever met.",
+    "voicedBy": "M",
+    "lesson": 61,
+    "audio": "1530.mp3",
+    "speechDrillings": [
+      { "order": 9, "id": 61, "_id": "5a64f75be004723135e9cc13" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1530.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1530
+  },
+  {
+    "_id": 1531,
+    "gender": "A",
+    "primary": false,
+    "rus": "Сколько раз вы опоздали на работу на этой [неделе|неделя|a week]?",
+    "eng": "How many times have you been late for work this week?",
+    "voicedBy": "M",
+    "lesson": 61,
+    "audio": "1531.mp3",
+    "speechDrillings": [
+      { "order": 10, "id": 61, "_id": "5a64f75be004723135e9cc14" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1531.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1531
+  },
+  {
+    "_id": 1532,
+    "gender": "A",
+    "primary": false,
+    "rus": "Сколько раз вы были [женаты|женатый, женат, замужем|married]?",
+    "eng": "How many times have you been married?",
+    "voicedBy": "F",
+    "lesson": 61,
+    "audio": "1532.mp3",
+    "speechDrillings": [
+      { "order": 5, "id": 61, "_id": "5a64f75be004723135e9cc0f" }
+    ],
+    "plfs": [],
+    "audioPath": "//classroom.kespa.ru/cdn/audio/sentences/1532.mp3",
+    "cdnPath": "//classroom.kespa.ru/cdn/audio/sentences/",
+    "id": 1532
+  }
+]

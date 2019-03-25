@@ -1,0 +1,204 @@
+{
+  "scores": [
+    {
+      "id": "1",
+      "value": 2,
+      "opponent": "Spartak",
+      "period": 1,
+      "eventId": "1"
+    },
+    {
+      "id": "2",
+      "value": 1,
+      "opponent": "Roma",
+      "period": 1,
+      "eventId": "1"
+    },
+    {
+      "id": "3",
+      "value": 4,
+      "opponent": "Spartak",
+      "period": 2,
+      "eventId": "1"
+    },
+    {
+      "id": "4",
+      "value": 4,
+      "opponent": "Roma",
+      "period": 2,
+      "eventId": "1"
+    },
+
+    {
+      "id": "5",
+      "value": 2,
+      "opponent": "Manchester",
+      "period": 1,
+      "eventId": "2"
+    },
+    {
+      "id": "6",
+      "value": 1,
+      "opponent": "Dinamo",
+      "period": 1,
+      "eventId": "2"
+    },
+    {
+      "id": "7",
+      "value": 4,
+      "opponent": "Manchester",
+      "period": 2,
+      "eventId": "2"
+    },
+    {
+      "id": "8",
+      "value": 4,
+      "opponent": "Dinamo",
+      "period": 2,
+      "eventId": "2"
+    }
+  ],
+  "sports": [
+    {
+      "id": "1",
+      "description": "football"
+    },
+    {
+      "id": "2",
+      "description": "hockey"
+    },
+    {
+      "id": "3",
+      "description": "tennis"
+    }
+  ],
+  "regions": [
+    {
+      "id": "1",
+      "description": "Europe Football",
+      "sportId": "1"
+    },
+    {
+      "id": "2",
+      "description": "Asia Football",
+      "sportId": "1"
+    },
+    {
+      "id": "3",
+      "description": "Africa Football",
+      "sportId": "1"
+    },
+    {
+      "id": "4",
+      "description": "Europe Hockey",
+      "sportId": "2"
+    },
+    {
+      "id": "5",
+      "description": "Asia Hockey",
+      "sportId": "2"
+    },
+    {
+      "id": "6",
+      "description": "Africa Hockey",
+      "sportId": "2"
+    }
+  ],
+  "leagues": [
+    {
+      "id": "1",
+      "description": "Europe Cup",
+      "regionId": "1"
+    },
+    {
+      "id": "2",
+      "description": "Asia Cup",
+      "regionId": "2"
+    },
+    {
+      "id": "3",
+      "description": "Africa Cup",
+      "regionId": "3"
+    },
+    {
+      "id": "4",
+      "description": "Europe Cup",
+      "regionId": "4"
+    },
+    {
+      "id": "5",
+      "description": "Asia Cup",
+      "regionId": "5"
+    },
+    {
+      "id": "6",
+      "description": "Africa Cup",
+      "regionId": "6"
+    },
+    {
+      "id": "7",
+      "description": "Europe Championship",
+      "regionId": "1"
+    },
+    {
+      "id": "8",
+      "description": "Europe Men",
+      "regionId": "1"
+    },
+    {
+      "id": "9",
+      "description": "Europe Women",
+      "regionId": "1"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "description": "Spartak - Roma",
+      "leagueId": "1",
+      "startDate": "2018-06-01T12:00:00+0000"
+    },
+    {
+      "id": "2",
+      "description": "Manchester - Dinamo",
+      "leagueId": "1",
+      "startDate": "2018-06-01T11:00:00+0000"
+    },
+    {
+      "id": "3",
+      "description": "Tokio - Hotel",
+      "leagueId": "2",
+      "startDate": "2018-06-02T08:00:00+0000"
+    },
+    {
+      "id": "4",
+      "description": "Torpedo - Roma",
+      "leagueId": "2",
+      "startDate": "2018-06-05T12:00:00+0000"
+    },
+    {
+      "id": "5",
+      "description": "Manchester - Dinamo",
+      "leagueId": "3",
+      "startDate": "2018-06-04T15:00:00+0000"
+    },
+    {
+      "id": "6",
+      "description": "Dinamo - Torpedo",
+      "leagueId": "4",
+      "startDate": "2018-06-03T03:00:00+0000"
+    },
+    {
+      "id": "7",
+      "description": "Motel - Hotel",
+      "leagueId": "5",
+      "startDate": "2018-06-01T00:00:00+0000"
+    },
+    {
+      "id": "8",
+      "description": "Tokio - Moscow",
+      "leagueId": "6",
+      "startDate": "2018-07-15T22:00:00+0000"
+    }
+  ]
+}

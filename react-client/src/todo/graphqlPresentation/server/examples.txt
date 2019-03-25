@@ -1,0 +1,99 @@
+
+// 1
+{
+  hello
+  greet(param: "Alex")
+  double(param: 5)
+}
+
+
+// 2
+mutation{
+  setMessage(param: "Russia : Egypt (3:1)")
+}
+
+query{
+  getMessage
+}
+
+// 3
+mutation{
+  createMessage(param:{content: "Message text"}) {
+    id
+  }
+}
+
+// order of execution
+mutation{
+  createMessage(param:{content: "some content"}) {
+    id
+  }
+  getMessage{
+    id
+  }
+}
+
+// 4
+// all sports
+{
+  SPORTS: sports {
+    id
+    description
+  }
+}
+
+// sport by id
+{
+  sportById(id: "1") {
+    id
+    description
+  }
+}
+
+// regions
+{
+  sports {
+    id
+    description
+    regions {
+      id
+    }
+  }
+}
+
+// leagues
+{
+  sports {
+    description
+    regions {
+      d: description
+      l: leagues {
+        d: description
+      }
+    }
+  }
+}
+
+// schema
+{
+  __schema {
+    types {
+      name
+      kind
+      fields {
+        name
+        type {
+          name
+          kind
+          ofType {
+            name
+            kind
+          }
+        }
+      }
+    }
+  }
+}
+
+
+1) fetch github - обертка над рестом

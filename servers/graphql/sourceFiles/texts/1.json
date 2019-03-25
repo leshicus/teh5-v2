@@ -1,0 +1,136 @@
+{
+  "comment": "",
+  "description": "Использование инфинитива в речи. Present Simple; конструкции с to be",
+  "difficulty": "",
+  "type": "sd",
+  "title": {
+    "rus": "Учить или не учить?",
+    "eng": "To learn or not to learn?",
+    "start": 3131,
+    "end": 4868
+  },
+  "audio": "1.mp3",
+  "plfGroup": 2,
+  "program": 1,
+  "sentences": [
+    {
+      "eng": "To learn English or not to learn English.",
+      "rus": "Учить английский или не учить.",
+      "start": 6200,
+      "end": 8775
+    },
+    {
+      "eng": "To spend time on it or not to spend time on it.",
+      "rus": "Тратить на это время или не тратить на это время.",
+      "start": 9350,
+      "end": 12569
+    },
+    {
+      "eng": "To take courses on week-days, in the evenings, after work or only at week-ends.",
+      "rus": "[Ходить на курсы|ходить на курсы|to take course ] в будни, по вечерам, после работы или только по выходным.",
+      "start": 13230,
+      "end": 19647
+    },
+    {
+      "eng": "To study on my own or with a private teacher.",
+      "rus": "Заниматься [самостоятельно|самостоятельно|on one's own] или с [частным|частный|private] преподавателем.",
+      "start": 20180,
+      "end": 22893
+    },
+    {
+      "eng": "I constantly ask myself these questions.",
+      "rus": "Я [постоянно|постоянно|constantly] задаю себе эти вопросы.",
+      "start": 24180,
+      "end": 26759
+    },
+    {
+      "eng": "Every morning I wake up thinking about English.",
+      "rus": "Каждое утро я [просыпаюсь с мыслью|просыпаться с мыслью|to wake up thinking] об английском.",
+      "start": 27960,
+      "end": 30899
+    },
+    {
+      "eng": "Usually I get up at about seven o'clock, make breakfast, make the bed, take a shower, do my hair, get ready for work and drink coffee.",
+      "rus": "Обычно я встаю около 7 часов, [готовлю завтрак|готовить завтрак|to make breakfast], [застилаю постель|застилать постель|to make the bed], [принимаю душ|принимать душ|to take a shower], [причесываюсь|причесываться|to do one's hair], [собираюсь|собираться куда-нибудь|to get ready for] [на работу|на работе|at work] и пью кофе.",
+      "start": 31840,
+      "end": 43599
+    },
+    {
+      "eng": "And I try not to think about English.",
+      "rus": "И я стараюсь не думать об английском.",
+      "start": 44550,
+      "end": 46989
+    },
+    {
+      "eng": "Quite often I leave home after eight and, as usual, try to solve a very important problem: «To take a taxi or to go by subway?».",
+      "rus": "Довольно часто я выхожу из дома после 8 и, [как обычно|как обычно|as usual], пытаюсь решить очень важную проблему: взять такси или [поехать на метро|ехать на метро|to go by subway]?",
+      "start": 47990,
+      "end": 59289
+    },
+    {
+      "eng": "On the way to work I, naturally, watch the other passengers on a train or watch the taxi driver.",
+      "rus": "[По дороге|по дороге куда-нибудь|on the way to (on my way to)] [на работу|на работе|at work] я, [естественно|естественно|naturally ], [рассматриваю пассажиров в поезде|в поезде|on a train] или наблюдаю за водителем такси.",
+      "start": 60690,
+      "end": 67579
+    },
+    {
+      "eng": "I look at them and think: «To get down to serious work or not».",
+      "rus": "Я смотрю на них и думаю: [приступать к|приступать к|to get down to, to get started] серьезным занятиям или нет…",
+      "start": 68620,
+      "end": 74399
+    },
+    {
+      "eng": "I seldom come to work on time.",
+      "rus": "Я редко прихожу [на работу|на работе|at work] [вовремя|вовремя|on time].",
+      "start": 75400,
+      "end": 77929
+    },
+    {
+      "eng": "But both at work and during a lunch-break, and even on my way home I constantly imagine that I speak English fluently, easily translate from Russian into English and backward; that I perfectly word my thoughts not only in Russian, but also in English, too.",
+      "rus": "Но и [на работе|на работе|at work], и во время [перерыва на обед|перерыв на обед|a lunch-break], и даже [по дороге|по дороге куда-нибудь|on the way to (on my way to)] домой я [постоянно|постоянно|constantly] [представляю|представлять|to imagine] себе, что [бегло|бегло|fluently] говорю по-английски, [легко|легко|easily] перевожу с русского на английский и наоборот; что я [прекрасно|прекрасно|perfectly] формулирую свои мысли не только по-русски, но и по-английски.",
+      "start": 78930,
+      "end": 100489
+    },
+    {
+      "eng": "I enjoy it a lot.",
+      "rus": "Я получаю от этого огромное удовольствие.",
+      "start": 101190,
+      "end": 102719
+    },
+    {
+      "eng": "But when I come home and make myself comfortable in front of the TV-set, I forget about everything.",
+      "rus": "Но когда я прихожу домой и удобно устраиваюсь [перед телевизором|перед телевизором|in front of TV], то [забываю|забывать|to forget] обо всем.",
+      "start": 103820,
+      "end": 110999
+    },
+    {
+      "eng": "And the next morning I, as usual, try to solve the most vital problems: «To learn English or not to learn English.",
+      "rus": "А на следующее утро я, [как обычно|как обычно|as usual], пытаюсь решить [самые насущные проблемы|самые насущные проблемы|the most vital problems]: «Учить английский или не учить английский.",
+      "start": 112110,
+      "end": 121799
+    },
+    {
+      "eng": "To spend time on it or not to spend time on it.",
+      "rus": "Тратить на это время или не тратить на это время.",
+      "start": 122530,
+      "end": 125679
+    },
+    {
+      "eng": "To take courses on week-days, in the evenings after work or only at week-ends.",
+      "rus": "[Ходить на курсы|ходить на курсы|to take course ] в будни, по вечерам после работы или только по выходным.",
+      "start": 126380,
+      "end": 132609
+    },
+    {
+      "eng": "To study on my own or with a private teacher…",
+      "rus": "Заниматься [самостоятельно|самостоятельно|on one's own] или с [частным|частный|private] преподавателем…",
+      "start": 133210,
+      "end": 136410
+    }
+  ],
+  "image": "//classroom.kespa.ru/cdn/images/1x/texts/1.jpg",
+  "image2x": "//classroom.kespa.ru/cdn/images/2x/texts/1.jpg",
+  "audioPath": "//classroom.kespa.ru/cdn/audio/texts/1.mp3",
+  "cdnPath": "//classroom.kespa.ru/cdn/audio/texts/",
+  "id": 1
+}
